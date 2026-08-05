@@ -3,6 +3,15 @@ import warnings
 import numpy as np
 import mne
 from pathlib import Path
+from tqdm import tqdm
+
+# How to use
+#from chbmit_loader import load_patient_data
+
+# Load everything for one patient
+#X, y = load_patient_data("chb01")
+
+
 
 BASE_DIR  = Path("/home/gmarihuan/chbmit")
 JSON_PATH = BASE_DIR / "chbmit_summary.json"
@@ -30,14 +39,9 @@ def _load_summary() -> dict:
         return json.load(f)
 
 
-def _read_required(filepath: Path, lowpass_hz: float | None = 64.0) -> mne.io.BaseRaw:
-    """Read an EDF, collapse the duplicate T8-P8 name, keep+reorder required
-    channels, and (optionally) apply the paper's lowpass filter.
-
-    lowpass_hz : float or None
-        Cutoff for the lowpass filter in Hz. The paper (Section III-A-1)
-        filters out noise above 64 Hz. Pass None to skip filtering (e.g. to
-        isolate the effect of the microvolt rescaling).
+def _read_required(filepath: Path) -> mne.io.BaseRaw:
+    """Read an EDF, collapse the duplicate T8-P8 name, and keep+reorder the
+    required channels.
     """
     with warnings.catch_warnings():
         warnings.filterwarnings(
@@ -49,11 +53,6 @@ def _read_required(filepath: Path, lowpass_hz: float | None = 64.0) -> mne.io.Ba
     if "T8-P8-0" in raw.ch_names:
         raw.rename_channels({"T8-P8-0": "T8-P8"})
     raw.pick(REQUIRED_CHANNELS)   # selects + reorders to match REQUIRED_CHANNELS
-
-    # Paper preprocessing: lowpass < 64 Hz. Done on the full recording before
-    # segmentation so the filter has the whole signal to work with.
-    if lowpass_hz is not None:
-        raw.filter(l_freq=None, h_freq=lowpass_hz, verbose=False)
     return raw
 
 
@@ -143,27 +142,26 @@ def split_seizure_segments(data, sfreq, seizure_starts, seizure_ends):
 
 
 def load_patient_data(patient_name: str, base_dir: str = str(BASE_DIR),
-                      normal_from_seizure_only: bool = False,
-                      lowpass_hz: float | None = 64.0,
-                      to_microvolts: bool = True):
+                      only_seizure_files: bool = False,
+                      progress: bool = True):
     """
     Load and label all EEG data for one patient as per-segment flattened vectors.
 
+    The volts-scale data from MNE is always multiplied by 1e6 -> microvolts,
+    which is required for the model to train (see VOLTS_TO_MICROVOLTS note above).
+
     Parameters
     ----------
-    normal_from_seizure_only : bool, default False
+    only_seizure_files : bool, default False
         If True, drop every fully-normal (non-seizure) recording and keep only
         the segments carved out of seizure recordings. The seizure (label 1)
         segments ARE still returned; only the standalone normal recordings are
         discarded. Result: a mix of label 0 (inter-ictal gaps) and label 1
         (seizure) windows, with the majority-class normal recordings removed.
-    lowpass_hz : float or None, default 64.0
-        Lowpass cutoff in Hz applied per recording (paper Section III-A-1).
-        Pass None to skip filtering.
-    to_microvolts : bool, default True
-        Multiply the volts-scale data from MNE by 1e6 -> microvolts. Required
-        for the model to train (see VOLTS_TO_MICROVOLTS note above). Set False
-        only if your raw data is already in non-volt units.
+    progress : bool, default True
+        Show a tqdm progress bar while the patient's EDF files are read.
+        Pass False to disable (e.g. when loading many patients in a loop that
+        already has its own bar).
 
     Returns
     -------
@@ -189,14 +187,23 @@ def load_patient_data(patient_name: str, base_dir: str = str(BASE_DIR),
     seizure_edfs = filter_files_with_channels(seizure_edfs, REQUIRED_CHANNELS)
     normal_edfs  = filter_files_with_channels(normal_edfs,  REQUIRED_CHANNELS)
 
-    scale = VOLTS_TO_MICROVOLTS if to_microvolts else 1.0
-
     X_segments: list[np.ndarray] = []
     y_labels:   list[int]        = []
 
+    # One progress bar per patient, covering every EDF actually read.
+    total_files = len(seizure_edfs)
+    if not only_seizure_files:
+        total_files += len(normal_edfs)
+    pbar = tqdm(
+        total=total_files,
+        desc=f"Loading {patient_name}",
+        unit="file",
+        disable=not progress,
+    )
+
     for filepath in seizure_edfs:
-        raw   = _read_required(filepath, lowpass_hz=lowpass_hz)
-        data  = raw.get_data() * scale          # (n_channels, n_times), microvolts
+        raw   = _read_required(filepath)
+        data  = raw.get_data() * VOLTS_TO_MICROVOLTS   # (n_channels, n_times), microvolts
         sfreq = raw.info["sfreq"]
 
         starts, ends = _extract_seizure_times(patient_summary.get(filepath.name))
@@ -210,19 +217,25 @@ def load_patient_data(patient_name: str, base_dir: str = str(BASE_DIR),
             X_segments.append(seg.reshape(-1))
             y_labels.append(0)
 
+        pbar.update(1)
+
     # Skip the fully-normal recordings entirely when we only want the
     # inter-ictal segments carved out of seizure files.
-    if not normal_from_seizure_only:
+    if not only_seizure_files:
         for filepath in normal_edfs:
-            raw  = _read_required(filepath, lowpass_hz=lowpass_hz)
-            data = raw.get_data() * scale            # one normal segment per file
+            raw  = _read_required(filepath)
+            data = raw.get_data() * VOLTS_TO_MICROVOLTS   # one normal segment per file
             X_segments.append(data.reshape(-1))
             y_labels.append(0)
+
+            pbar.update(1)
+
+    pbar.close()
 
     if not X_segments:
         raise ValueError(
             f"No segments produced for patient '{patient_name}' "
-            f"(check required channels / normal_from_seizure_only setting)."
+            f"(check required channels / only_seizure_files setting)."
         )
 
     # Object array because segments have different lengths.

@@ -1,1 +1,3 @@
 data
+processednotebooks/processed/*.npz
+notebooks/processed/*.npz
