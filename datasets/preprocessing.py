@@ -28,9 +28,9 @@ def balance_dataset(X, y, method="undersample", seed=0):
     if len(classes) != 2:
         raise ValueError(f"Expected 2 classes, found {classes.tolist()}.")
 
-    target = counts.min() if method == "undersample" else counts.max()
     if method not in ("undersample", "oversample"):
         raise ValueError("method must be 'undersample' or 'oversample'.")
+    target = counts.min() if method == "undersample" else counts.max()
 
     keep_idx = []
     for cls in classes:
@@ -44,6 +44,48 @@ def balance_dataset(X, y, method="undersample", seed=0):
     return X[keep_idx], y[keep_idx]
 
 
+def cap_class_ratio(X, y, *extra, max_ratio=5, seed=0):
+    """
+    Undersample the majority class so it has at most `max_ratio` times as
+    many windows as the minority class (e.g. max_ratio=5 -> at most 1:5).
+
+    Parameters
+    ----------
+    X : np.ndarray, shape (n_windows, ...)
+    y : np.ndarray, shape (n_windows,)   binary labels (0/1)
+    *extra : np.ndarray, shape (n_windows,)
+        Other per-window arrays (e.g. recording ids) indexed the same way.
+    max_ratio : float
+        Maximum majority/minority count ratio.
+    seed : int
+        RNG seed for reproducible sampling.
+
+    Returns
+    -------
+    X, y, *extra : arrays with the dropped windows removed. Original (temporal)
+        order is preserved. Returned unchanged if the ratio is already within
+        the cap or one class is absent.
+    """
+    y = np.asarray(y)
+    rng = np.random.default_rng(seed)
+
+    classes, counts = np.unique(y, return_counts=True)
+    if len(classes) != 2:
+        return (X, y, *extra)
+
+    cap = int(counts.min() * max_ratio)
+    if counts.max() <= cap:
+        return (X, y, *extra)
+
+    majority = classes[np.argmax(counts)]
+    maj_idx = np.flatnonzero(y == majority)
+    dropped = rng.choice(maj_idx, size=len(maj_idx) - cap, replace=False)
+
+    keep = np.ones(len(y), dtype=bool)
+    keep[dropped] = False
+    return (X[keep], y[keep], *(np.asarray(a)[keep] for a in extra))
+
+
 
 def segments_to_windows(
     X_segments: np.ndarray,
@@ -54,6 +96,7 @@ def segments_to_windows(
     n_channels: int = 21,
     overlap_seizure_only: bool = False,
     seizure_label: int = 1,
+    groups=None,
 ):
     """
     Turn variable-length segments into a fixed-size 3D array of windows.
@@ -81,12 +124,18 @@ def segments_to_windows(
         applied to all segments).
     seizure_label : int
         Label value that marks a seizure segment. Default 1.
+    groups : array-like, shape (n_segments,), optional
+        Per-segment group ids (e.g. recording names from load_patient_data
+        with return_recordings=True). If given, a per-window groups array
+        is returned as a third output.
 
     Returns
     -------
     X : np.ndarray, shape (n_windows, n_channels, window_samples), float
     y : np.ndarray, shape (n_windows,), int8
         Each window inherits the label of the segment it came from.
+    groups : np.ndarray, shape (n_windows,)
+        Only when `groups` is given; each window inherits its segment's group.
     """
     if window_samples <= 0:
         raise ValueError("window_samples must be positive.")
@@ -104,9 +153,10 @@ def segments_to_windows(
     overlap_step = window_samples - overlap_samples
     no_overlap_step = window_samples
 
-    X_windows, y_windows = [], []
+    X_windows, y_windows, g_windows = [], [], []
+    seg_groups = groups if groups is not None else [None] * len(y_segments)
 
-    for flat, label in zip(X_segments, y_segments):
+    for flat, label, group in zip(X_segments, y_segments, seg_groups):
         # un-flatten (channels × time) → (n_channels, n_times)
         seg = np.asarray(flat).reshape(n_channels, -1)
         n_times = seg.shape[1]
@@ -124,6 +174,7 @@ def segments_to_windows(
         for start in range(0, n_times - window_samples + 1, step):
             X_windows.append(seg[:, start:start + window_samples])
             y_windows.append(label)
+            g_windows.append(group)
 
     if not X_windows:
         raise ValueError(
@@ -133,4 +184,6 @@ def segments_to_windows(
 
     X = np.stack(X_windows, axis=0).astype(np.float64)   # (n_windows, n_channels, window)
     y = np.asarray(y_windows, dtype=np.int8)
+    if groups is not None:
+        return X, y, np.asarray(g_windows)
     return X, y

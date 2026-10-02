@@ -4,7 +4,7 @@ from lopocv.run_lopocv_fold import run_fold
 from models.asymsetnet import AsymSETNet
 from models.asymsetnet_grouped import AsymSETNetGrouped
 
-def load_dataset(path="/home/gmarihuan/processed/chbmit_windows_all.npz"):
+def load_dataset(path="/home/gmarihuan/metapaper/datasets/data/balanced_windows/chbmit_windows_all.npz"):
     """Return the whole dataset as X (float32), y, patient."""
     d = np.load(path, allow_pickle=True)
     X = d["X"].astype(np.float32)

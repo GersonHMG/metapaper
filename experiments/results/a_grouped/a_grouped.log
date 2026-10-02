@@ -1,0 +1,89 @@
+ 1s chb01 fold 0: F1=0.895 (7s)
+ 1s chb01 fold 1: F1=0.793 (3s)
+ 1s chb01 fold 2: F1=0.827 (3s)
+ 1s chb01 fold 3: F1=0.962 (3s)
+ 1s chb01 fold 4: F1=0.879 (4s)
+ 1s chb18 fold 0: F1=0.375 (2s)
+ 1s chb18 fold 1: F1=0.535 (2s)
+ 1s chb18 fold 2: F1=0.868 (3s)
+ 1s chb18 fold 3: F1=0.900 (3s)
+ 1s chb18 fold 4: F1=0.883 (2s)
+ 1s chb06 fold 0: F1=0.857 (2s)
+ 1s chb06 fold 1: F1=0.750 (2s)
+ 1s chb06 fold 2: F1=0.817 (3s)
+ 1s chb06 fold 3: F1=0.333 (1s)
+ 1s chb06 fold 4: F1=0.714 (2s)
+ 3s chb01 fold 0: F1=0.960 (5s)
+ 3s chb01 fold 1: F1=0.775 (2s)
+ 3s chb01 fold 2: F1=0.955 (2s)
+ 3s chb01 fold 3: F1=0.915 (4s)
+ 3s chb01 fold 4: F1=0.961 (3s)
+ 3s chb18 fold 0: F1=0.857 (2s)
+ 3s chb18 fold 1: F1=0.952 (2s)
+ 3s chb18 fold 2: F1=0.916 (1s)
+ 3s chb18 fold 3: F1=0.400 (1s)
+ 3s chb18 fold 4: F1=0.947 (2s)
+ 3s chb06 fold 0: F1=0.889 (1s)
+ 3s chb06 fold 1: F1=0.800 (2s)
+ 3s chb06 fold 2: F1=0.704 (1s)
+ 3s chb06 fold 3: F1=0.314 (1s)
+ 3s chb06 fold 4: F1=0.875 (1s)
+ 5s chb01 fold 0: F1=0.941 (2s)
+ 5s chb01 fold 1: F1=0.923 (3s)
+ 5s chb01 fold 2: F1=0.927 (3s)
+ 5s chb01 fold 3: F1=0.973 (2s)
+ 5s chb01 fold 4: F1=0.939 (2s)
+ 5s chb18 fold 0: F1=0.818 (2s)
+ 5s chb18 fold 1: F1=0.957 (1s)
+ 5s chb18 fold 2: F1=0.960 (1s)
+ 5s chb18 fold 3: F1=0.500 (3s)
+ 5s chb18 fold 4: F1=0.957 (1s)
+ 5s chb06 fold 0: F1=0.500 (1s)
+ 5s chb06 fold 1: F1=0.667 (1s)
+ 5s chb06 fold 2: F1=0.846 (1s)
+ 5s chb06 fold 3: F1=0.308 (1s)
+ 5s chb06 fold 4: F1=0.800 (1s)
+10s chb01 fold 0: F1=1.000 (2s)
+10s chb01 fold 1: F1=0.952 (2s)
+10s chb01 fold 2: F1=1.000 (3s)
+10s chb01 fold 3: F1=0.941 (2s)
+10s chb01 fold 4: F1=0.957 (2s)
+10s chb18 fold 0: F1=0.500 (2s)
+10s chb18 fold 1: F1=0.727 (2s)
+10s chb18 fold 2: F1=0.909 (2s)
+10s chb18 fold 3: F1=0.667 (2s)
+10s chb18 fold 4: F1=0.957 (1s)
+10s chb06 fold 0: F1=1.000 (1s)
+10s chb06 fold 1: F1=1.000 (1s)
+10s chb06 fold 2: F1=0.857 (1s)
+10s chb06 fold 3: F1=0.421 (1s)
+10s chb06 fold 4: F1=1.000 (1s)
+
+# Experiment A: Grouped kernel results
+
+`SpatialNet(spatial="grouped")`, recording CV (5 folds), patients chb01, chb18, chb06. See `experiments/experiment_a.md`.
+
+Cells are F1 mean ± variance. Per-fold rows with all metrics: `a_grouped_folds.csv`.
+
+## Mean over patients
+
+**All patients (mean of the per-patient fold means ± variance across patients)**
+
+| Window | grouped |
+|---|---|
+| 1 s | 0.759 ± 0.009 |
+| 3 s | 0.815 ± 0.010 |
+| 5 s | 0.801 ± 0.026 |
+| 10 s | 0.859 ± 0.012 |
+
+## Per patient
+
+**Mean ± variance over folds**
+
+| Window | chb01 | chb18 | chb06 |
+|---|---|---|---|
+| 1 s | 0.871 ± 0.004 | 0.712 ± 0.058 | 0.694 ± 0.044 |
+| 3 s | 0.913 ± 0.006 | 0.815 ± 0.055 | 0.716 ± 0.056 |
+| 5 s | 0.941 ± 0.000 | 0.838 ± 0.039 | 0.624 ± 0.049 |
+| 10 s | 0.970 ± 0.001 | 0.752 ± 0.034 | 0.856 ± 0.063 |
+

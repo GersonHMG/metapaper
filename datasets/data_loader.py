@@ -141,9 +141,43 @@ def split_seizure_segments(data, sfreq, seizure_starts, seizure_ends):
     return seizure_segments, normal_segments
 
 
+def load_seizure_recordings(patient_name: str, base_dir: str = str(BASE_DIR),
+                            progress: bool = False):
+    """
+    Load every seizure recording of a patient as one continuous signal.
+
+    Returns
+    -------
+    list of (name, data, sfreq, starts, ends), one per seizure recording that
+    has all REQUIRED_CHANNELS:
+        name   : EDF filename, e.g. "chb01_03.edf"
+        data   : (n_channels, n_times) float, microvolts
+        sfreq  : sampling frequency (Hz)
+        starts, ends : seizure start/end times in seconds
+    """
+    patient_summary = _load_summary().get(patient_name, {})
+    patient_dir = Path(base_dir) / patient_name
+    if not patient_dir.is_dir():
+        raise FileNotFoundError(f"Patient directory not found: {patient_dir}")
+
+    seizure_edfs = [f for f in sorted(patient_dir.glob("*.edf"))
+                    if (patient_summary.get(f.name) or {}).get("seizures")]
+    seizure_edfs = filter_files_with_channels(seizure_edfs, REQUIRED_CHANNELS)
+
+    recordings = []
+    for filepath in tqdm(seizure_edfs, desc=f"Loading {patient_name}",
+                         unit="file", disable=not progress):
+        raw = _read_required(filepath)
+        data = raw.get_data() * VOLTS_TO_MICROVOLTS   # (n_channels, n_times), microvolts
+        starts, ends = _extract_seizure_times(patient_summary.get(filepath.name))
+        recordings.append((filepath.name, data, raw.info["sfreq"], starts, ends))
+    return recordings
+
+
 def load_patient_data(patient_name: str, base_dir: str = str(BASE_DIR),
                       only_seizure_files: bool = False,
-                      progress: bool = True):
+                      progress: bool = True,
+                      return_recordings: bool = False):
     """
     Load and label all EEG data for one patient as per-segment flattened vectors.
 
@@ -162,11 +196,16 @@ def load_patient_data(patient_name: str, base_dir: str = str(BASE_DIR),
         Show a tqdm progress bar while the patient's EDF files are read.
         Pass False to disable (e.g. when loading many patients in a loop that
         already has its own bar).
+    return_recordings : bool, default False
+        If True, also return the EDF filename each segment came from
+        (e.g. "chb01_03.edf"), for recording-level cross-validation.
 
     Returns
     -------
     X : np.ndarray, shape (n_segments,), dtype=object
     y : np.ndarray, shape (n_segments,), dtype int8
+    rec : np.ndarray, shape (n_segments,), dtype str
+        Only when return_recordings=True.
     """
     summary         = _load_summary()
     patient_summary = summary.get(patient_name, {})
@@ -189,6 +228,7 @@ def load_patient_data(patient_name: str, base_dir: str = str(BASE_DIR),
 
     X_segments: list[np.ndarray] = []
     y_labels:   list[int]        = []
+    recordings: list[str]        = []
 
     # One progress bar per patient, covering every EDF actually read.
     total_files = len(seizure_edfs)
@@ -212,10 +252,12 @@ def load_patient_data(patient_name: str, base_dir: str = str(BASE_DIR),
         for seg in seiz_segs:
             X_segments.append(seg.reshape(-1))   # flatten (channels × time)
             y_labels.append(1)
+            recordings.append(filepath.name)
 
         for seg in norm_segs:
             X_segments.append(seg.reshape(-1))
             y_labels.append(0)
+            recordings.append(filepath.name)
 
         pbar.update(1)
 
@@ -227,6 +269,7 @@ def load_patient_data(patient_name: str, base_dir: str = str(BASE_DIR),
             data = raw.get_data() * VOLTS_TO_MICROVOLTS   # one normal segment per file
             X_segments.append(data.reshape(-1))
             y_labels.append(0)
+            recordings.append(filepath.name)
 
             pbar.update(1)
 
@@ -244,4 +287,6 @@ def load_patient_data(patient_name: str, base_dir: str = str(BASE_DIR),
         X[i] = seg
     y = np.asarray(y_labels, dtype=np.int8)
 
+    if return_recordings:
+        return X, y, np.asarray(recordings)
     return X, y

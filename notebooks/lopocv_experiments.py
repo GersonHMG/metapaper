@@ -13,7 +13,7 @@ from models.asymsetnet_grouped import AsymSETNetGrouped
 # --------------------------------------------------------------------------- #
 # Config
 # --------------------------------------------------------------------------- #
-DATA_PATH = "/home/gmarihuan/processed/chbmit_windows_all.npz"
+DATA_PATH = "/home/gmarihuan/metapaper/datasets/data/balanced_windows/chbmit_windows_all.npz"
 RESULTS_ROOT = Path(".")      # CSVs go to RESULTS_ROOT/<model>_lopocv/run_<x>.csv
 N_SEGMENTS = 3
 N_RUNS = 30                   # full LOPOCV repetitions, each with its own seed

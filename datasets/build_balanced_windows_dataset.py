@@ -1,6 +1,7 @@
 """
-Build the windowed, class-balanced CHB-MIT dataset for all patients and
-save it to disk.
+Build the balanced-window CHB-MIT dataset (1:1 seizure/normal, undersampled
+per patient) for all patients and save it to disk. Intended for
+leave-one-patient-out CV.
 
 Per patient it runs:
     load_patient_data -> segments_to_windows(..., 256*3) -> balance_dataset
@@ -8,7 +9,7 @@ Saves each patient individually AND a combined dataset with a patient_id
 array (needed for leave-one-patient-out cross-validation).
 
 Windows are stored as float16 to save space; cast back to float32 when
-loading for training (see load helper at the bottom).
+loading for training (use datasets/balanced_windows.py to load).
 """
 
 import sys
@@ -18,10 +19,14 @@ from pathlib import Path
 
 import numpy as np
 
-sys.path.append("..")          # make `datasets` importable
+# put metapaper/ first so it wins over the pip `datasets` (HuggingFace) package
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from datasets.data_loader import load_patient_data          # noqa: E402
 from datasets.preprocessing import segments_to_windows, balance_dataset  # noqa: E402
+# paths and loading helpers live in the loader module (re-exported here)
+from datasets.balanced_windows import (DATA_DIR as OUT_DIR, PER_PATIENT_DIR,  # noqa: E402,F401
+                                       load_windows)
 
 # ----------------------------------------------------------------------
 # Config
@@ -30,8 +35,6 @@ WINDOW_LEN = 256 * 3                 # 768 samples per window
 N_PATIENTS = 24                      # chb01 .. chb24
 PATIENTS = [f"chb{i:02d}" for i in range(1, N_PATIENTS + 1)]
 
-OUT_DIR = Path("./processed")                    # <- Path, not str
-PER_PATIENT_DIR = OUT_DIR / "per_patient"
 
 
 def process_patient(name: str):
@@ -98,14 +101,6 @@ def main():
     print(f"TOTAL: {X_all.shape[0]} windows, shape per window {tuple(X_all.shape[1:])}")
     print(f"Saved combined -> {OUT_DIR / 'chbmit_windows_all.npz'}")
     print(f"Saved per-patient -> {PER_PATIENT_DIR}/")
-
-
-def load_windows(path):
-    """Load a saved .npz and cast X back to float32 for training."""
-    d = np.load(path, allow_pickle=True)
-    out = {k: d[k] for k in d.files}
-    out["X"] = out["X"].astype(np.float32)       # float16 -> float32
-    return out
 
 
 if __name__ == "__main__":
