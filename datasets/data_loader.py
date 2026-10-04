@@ -174,6 +174,27 @@ def load_seizure_recordings(patient_name: str, base_dir: str = str(BASE_DIR),
     return recordings
 
 
+def iter_recordings(patient_name: str, base_dir: str = str(BASE_DIR)):
+    """
+    Yield every recording of a patient (with or without seizures) that has all
+    REQUIRED_CHANNELS, one at a time, in filename order:
+        (name, data, sfreq, starts, ends)
+    as in load_seizure_recordings; starts/ends are empty for seizure-free files.
+    """
+    patient_summary = _load_summary().get(patient_name, {})
+    patient_dir = Path(base_dir) / patient_name
+    if not patient_dir.is_dir():
+        raise FileNotFoundError(f"Patient directory not found: {patient_dir}")
+
+    edfs = filter_files_with_channels(sorted(patient_dir.glob("*.edf")), REQUIRED_CHANNELS)
+    for filepath in edfs:
+        raw = _read_required(filepath)
+        data = raw.get_data() * VOLTS_TO_MICROVOLTS   # (n_channels, n_times), microvolts
+        info = patient_summary.get(filepath.name) or {}
+        starts, ends = (_extract_seizure_times(info) if info.get("seizures") else ([], []))
+        yield filepath.name, data, raw.info["sfreq"], starts, ends
+
+
 def load_patient_data(patient_name: str, base_dir: str = str(BASE_DIR),
                       only_seizure_files: bool = False,
                       progress: bool = True,

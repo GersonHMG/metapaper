@@ -37,7 +37,9 @@ class FocalLoss(nn.Module):
         self.gamma = gamma
 
     def forward(self, logits, targets):
-        bce = F.binary_cross_entropy_with_logits(logits, targets, reduction="none")
+        if logits.dim() > targets.dim():        # per-segment logits (B, N), window labels (B,)
+            targets = targets.unsqueeze(-1).expand_as(logits)
+        bce =F.binary_cross_entropy_with_logits(logits, targets, reduction="none")
         p_t = torch.exp(-bce)                                   # prob. of the true class
         alpha_t = self.alpha * targets + (1 - self.alpha) * (1 - targets)
         return (alpha_t * (1 - p_t) ** self.gamma * bce).mean()

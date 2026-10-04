@@ -1,0 +1,92 @@
+ 1s chb01 fold 0: F1=0.769 auroc=0.954 best_epoch=10 (1929 train win, 180s)
+ 1s chb01 fold 1: F1=0.823 auroc=0.980 best_epoch=14 (1675 train win, 118s)
+ 1s chb01 fold 2: F1=0.854 auroc=0.977 best_epoch=9 (1684 train win, 118s)
+ 1s chb01 fold 3: F1=0.905 auroc=0.991 best_epoch=19 (1560 train win, 110s)
+ 1s chb01 fold 4: F1=0.851 auroc=0.969 best_epoch=11 (1636 train win, 116s)
+ 3s chb01 fold 0: F1=0.818 auroc=0.937 best_epoch=4 (638 train win, 45s)
+ 3s chb01 fold 1: F1=0.968 auroc=0.982 best_epoch=7 (552 train win, 39s)
+ 3s chb01 fold 2: F1=0.912 auroc=0.976 best_epoch=6 (542 train win, 38s)
+ 3s chb01 fold 3: F1=0.951 auroc=0.996 best_epoch=3 (556 train win, 39s)
+ 3s chb01 fold 4: F1=0.974 auroc=0.996 best_epoch=19 (513 train win, 36s)
+ 5s chb01 fold 0: F1=0.857 auroc=0.950 best_epoch=7 (379 train win, 27s)
+ 5s chb01 fold 1: F1=0.944 auroc=0.998 best_epoch=14 (331 train win, 23s)
+ 5s chb01 fold 2: F1=0.927 auroc=0.967 best_epoch=10 (321 train win, 23s)
+ 5s chb01 fold 3: F1=0.944 auroc=0.999 best_epoch=2 (331 train win, 23s)
+ 5s chb01 fold 4: F1=1.000 auroc=1.000 best_epoch=14 (307 train win, 22s)
+ 8s chb01 fold 0: F1=0.889 auroc=1.000 best_epoch=13 (230 train win, 16s)
+ 8s chb01 fold 1: F1=1.000 auroc=1.000 best_epoch=15 (201 train win, 14s)
+ 8s chb01 fold 2: F1=0.000 auroc=0.492 best_epoch=17 (196 train win, 14s)
+ 8s chb01 fold 3: F1=1.000 auroc=1.000 best_epoch=19 (201 train win, 14s)
+ 8s chb01 fold 4: F1=0.963 auroc=1.000 best_epoch=16 (187 train win, 13s)
+10s chb01 fold 0: F1=0.857 auroc=1.000 best_epoch=10 (163 train win, 12s)
+10s chb01 fold 1: F1=1.000 auroc=1.000 best_epoch=7 (158 train win, 11s)
+10s chb01 fold 2: F1=1.000 auroc=1.000 best_epoch=8 (187 train win, 13s)
+10s chb01 fold 3: F1=0.947 auroc=1.000 best_epoch=18 (163 train win, 11s)
+10s chb01 fold 4: F1=1.000 auroc=1.000 best_epoch=12 (153 train win, 11s)
+
+# DCSENet vs. SpatialNet on recording CV
+
+Recording CV (5 folds), patients chb01. DCSENet: one spectrogram image per channel, window probability = mean over the 21 channels (see `experiments/experiment_b1_dcsenet.md`). SpatialNet rows come from `a_grouped_all`, `a1_kernel_height_h1_all`, `a1_kernel_height`, `a1_kernel_height_h16_h21_all`.
+
+Folds with different test recordings than DCSENet: **0** (0 = identical splits).
+
+**chb01: f1 (mean ± std over folds). Best per window in bold.**
+
+| Model | 1 s | 3 s | 5 s | 8 s | 10 s |
+|---|---|---|---|---|---|
+| DCSENet | 0.840 ± 0.050 | 0.924 ± 0.064 | 0.935 ± 0.051 | 0.770 ± 0.433 | 0.961 ± 0.062 |
+| grouped | 0.861 ± 0.066 | 0.915 ± 0.075 | 0.936 ± 0.026 | **0.974** ± 0.038 | 0.970 ± 0.028 |
+| h=1 | **0.901** ± 0.067 | 0.945 ± 0.032 | 0.869 ± 0.171 | 0.892 ± 0.220 | 0.903 ± 0.109 |
+| h=4 | 0.893 ± 0.071 | **0.955** ± 0.034 | 0.650 ± 0.407 | — | 0.883 ± 0.146 |
+| h=8 | 0.900 ± 0.049 | 0.932 ± 0.041 | 0.846 ± 0.120 | — | 0.905 ± 0.112 |
+| h=16 | 0.866 ± 0.050 | 0.903 ± 0.041 | **0.940** ± 0.038 | 0.955 ± 0.058 | 0.955 ± 0.051 |
+| h=21 | 0.807 ± 0.048 | 0.886 ± 0.035 | 0.922 ± 0.016 | 0.916 ± 0.097 | **0.988** ± 0.026 |
+
+**chb01: auroc (mean ± std over folds). Best per window in bold.**
+
+| Model | 1 s | 3 s | 5 s | 8 s | 10 s |
+|---|---|---|---|---|---|
+| DCSENet | 0.974 ± 0.014 | 0.977 ± 0.024 | 0.983 ± 0.023 | 0.898 ± 0.227 | **1.000** ± 0.000 |
+| grouped | 0.989 ± 0.005 | 0.996 ± 0.004 | **0.998** ± 0.001 | 1.000 ± 0.001 | 1.000 ± 0.001 |
+| h=1 | **0.994** ± 0.005 | 0.995 ± 0.006 | 0.997 ± 0.005 | **1.000** ± 0.000 | **1.000** ± 0.000 |
+| h=4 | 0.991 ± 0.006 | 0.996 ± 0.007 | 0.987 ± 0.019 | — | 0.997 ± 0.006 |
+| h=8 | 0.993 ± 0.004 | **0.997** ± 0.004 | 0.995 ± 0.005 | — | 0.987 ± 0.021 |
+| h=16 | 0.989 ± 0.007 | 0.997 ± 0.002 | 0.996 ± 0.004 | 0.997 ± 0.007 | 0.996 ± 0.009 |
+| h=21 | 0.979 ± 0.012 | 0.996 ± 0.003 | 0.997 ± 0.002 | 1.000 ± 0.001 | **1.000** ± 0.000 |
+
+**chb01: sensitivity (mean ± std over folds). Best per window in bold.**
+
+| Model | 1 s | 3 s | 5 s | 8 s | 10 s |
+|---|---|---|---|---|---|
+| DCSENet | 0.841 ± 0.125 | 0.903 ± 0.118 | 0.918 ± 0.097 | 0.746 ± 0.425 | **1.000** ± 0.000 |
+| grouped | 0.927 ± 0.063 | 0.948 ± 0.039 | **0.990** ± 0.022 | 0.982 ± 0.041 | 0.978 ± 0.050 |
+| h=1 | 0.950 ± 0.033 | 0.960 ± 0.021 | 0.945 ± 0.045 | **1.000** ± 0.000 | **1.000** ± 0.000 |
+| h=4 | 0.948 ± 0.033 | 0.966 ± 0.035 | 0.753 ± 0.425 | — | 0.980 ± 0.045 |
+| h=8 | **0.959** ± 0.036 | **0.979** ± 0.034 | 0.945 ± 0.076 | — | 0.978 ± 0.050 |
+| h=16 | 0.939 ± 0.039 | 0.940 ± 0.066 | 0.959 ± 0.023 | 0.964 ± 0.081 | 0.956 ± 0.099 |
+| h=21 | 0.893 ± 0.076 | 0.921 ± 0.080 | 0.932 ± 0.075 | 0.902 ± 0.173 | 0.978 ± 0.050 |
+
+**chb01: specificity (mean ± std over folds). Best per window in bold.**
+
+| Model | 1 s | 3 s | 5 s | 8 s | 10 s |
+|---|---|---|---|---|---|
+| DCSENet | **0.969** ± 0.028 | **0.991** ± 0.010 | **0.992** ± 0.009 | **1.000** ± 0.000 | 0.982 ± 0.029 |
+| grouped | 0.953 ± 0.040 | 0.972 ± 0.046 | 0.975 ± 0.012 | 0.993 ± 0.016 | 0.992 ± 0.010 |
+| h=1 | 0.966 ± 0.040 | 0.985 ± 0.016 | 0.933 ± 0.131 | 0.917 ± 0.177 | 0.951 ± 0.062 |
+| h=4 | 0.962 ± 0.042 | 0.988 ± 0.017 | 0.912 ± 0.163 | — | 0.940 ± 0.089 |
+| h=8 | 0.964 ± 0.023 | 0.975 ± 0.017 | 0.932 ± 0.089 | — | 0.960 ± 0.046 |
+| h=16 | 0.953 ± 0.029 | 0.971 ± 0.024 | 0.984 ± 0.012 | 0.989 ± 0.010 | 0.992 ± 0.012 |
+| h=21 | 0.935 ± 0.033 | 0.968 ± 0.027 | 0.982 ± 0.019 | 0.990 ± 0.015 | **1.000** ± 0.000 |
+
+## DCSENet per image (paper style, pooled over folds)
+
+| Window | F1 | Sens. | Spec. | Acc. |
+|---|---|---|---|---|
+| 1 s | 0.582 | 0.726 | 0.846 | 0.826 |
+| 3 s | 0.713 | 0.795 | 0.913 | 0.893 |
+| 5 s | 0.734 | 0.843 | 0.909 | 0.898 |
+| 8 s | 0.676 | 0.659 | 0.941 | 0.894 |
+| 10 s | 0.801 | 0.900 | 0.930 | 0.925 |
+
+Training time, all folds: 18.1 min. Per-fold rows: `a_dcsenet_folds.csv`.
+

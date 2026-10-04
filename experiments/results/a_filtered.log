@@ -1,0 +1,155 @@
+chbmit bip  3s chb01 grouped fold 0: F1=0.833 (6s)
+chbmit bip  3s chb01 h=1     fold 0: F1=0.960 (8s)
+chbmit bip  3s chb01 grouped fold 1: F1=0.833 (2s)
+chbmit bip  3s chb01 h=1     fold 1: F1=0.938 (5s)
+chbmit bip  3s chb01 grouped fold 2: F1=0.954 (5s)
+chbmit bip  3s chb01 h=1     fold 2: F1=0.943 (7s)
+chbmit bip  3s chb01 grouped fold 3: F1=0.897 (3s)
+chbmit bip  3s chb01 h=1     fold 3: F1=0.866 (8s)
+chbmit bip  3s chb01 grouped fold 4: F1=0.950 (3s)
+chbmit bip  3s chb01 h=1     fold 4: F1=0.974 (8s)
+chbmit bip  3s chb18 grouped fold 0: F1=0.667 (2s)
+chbmit bip  3s chb18 h=1     fold 0: F1=0.789 (4s)
+chbmit bip  3s chb18 grouped fold 1: F1=0.875 (2s)
+chbmit bip  3s chb18 h=1     fold 1: F1=0.776 (6s)
+chbmit bip  3s chb18 grouped fold 2: F1=0.911 (1s)
+chbmit bip  3s chb18 h=1     fold 2: F1=0.892 (5s)
+chbmit bip  3s chb18 grouped fold 3: F1=0.353 (2s)
+chbmit bip  3s chb18 h=1     fold 3: F1=0.333 (4s)
+chbmit bip  3s chb18 grouped fold 4: F1=0.947 (2s)
+chbmit bip  3s chb18 h=1     fold 4: F1=0.923 (4s)
+chbmit bip 10s chb01 grouped fold 0: F1=0.947 (2s)
+chbmit bip 10s chb01 h=1     fold 0: F1=0.947 (7s)
+chbmit bip 10s chb01 grouped fold 1: F1=0.952 (3s)
+chbmit bip 10s chb01 h=1     fold 1: F1=1.000 (8s)
+chbmit bip 10s chb01 grouped fold 2: F1=0.889 (3s)
+chbmit bip 10s chb01 h=1     fold 2: F1=1.000 (10s)
+chbmit bip 10s chb01 grouped fold 3: F1=0.941 (3s)
+chbmit bip 10s chb01 h=1     fold 3: F1=0.857 (9s)
+chbmit bip 10s chb01 grouped fold 4: F1=1.000 (2s)
+chbmit bip 10s chb01 h=1     fold 4: F1=1.000 (7s)
+chbmit bip 10s chb18 grouped fold 0: F1=0.500 (2s)
+chbmit bip 10s chb18 h=1     fold 0: F1=0.000 (7s)
+chbmit bip 10s chb18 grouped fold 1: F1=0.727 (2s)
+chbmit bip 10s chb18 h=1     fold 1: F1=0.471 (6s)
+chbmit bip 10s chb18 grouped fold 2: F1=0.909 (2s)
+chbmit bip 10s chb18 h=1     fold 2: F1=0.909 (5s)
+chbmit bip 10s chb18 grouped fold 3: F1=0.909 (2s)
+chbmit bip 10s chb18 h=1     fold 3: F1=0.909 (6s)
+chbmit bip 10s chb18 grouped fold 4: F1=0.957 (1s)
+chbmit bip 10s chb18 h=1     fold 4: F1=0.786 (3s)
+siena bip  3s PN00 grouped fold 0: F1=0.792 (2s)
+siena bip  3s PN00 h=1     fold 0: F1=0.857 (6s)
+siena bip  3s PN00 grouped fold 1: F1=0.810 (1s)
+siena bip  3s PN00 h=1     fold 1: F1=0.632 (6s)
+siena bip  3s PN00 grouped fold 2: F1=0.618 (3s)
+siena bip  3s PN00 h=1     fold 2: F1=0.630 (5s)
+siena bip  3s PN00 grouped fold 3: F1=0.857 (2s)
+siena bip  3s PN00 h=1     fold 3: F1=0.889 (6s)
+siena bip  3s PN00 grouped fold 4: F1=0.826 (2s)
+siena bip  3s PN00 h=1     fold 4: F1=0.792 (3s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 4 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+siena bip  3s PN14 grouped fold 0: F1=0.824 (1s)
+siena bip  3s PN14 h=1     fold 0: F1=0.667 (2s)
+siena bip  3s PN14 grouped fold 1: F1=0.857 (1s)
+siena bip  3s PN14 h=1     fold 1: F1=0.750 (4s)
+siena bip  3s PN14 grouped fold 2: F1=0.667 (1s)
+siena bip  3s PN14 h=1     fold 2: F1=0.600 (2s)
+siena bip  3s PN14 grouped fold 3: F1=0.656 (1s)
+siena bip  3s PN14 h=1     fold 3: F1=0.649 (1s)
+siena bip 10s PN00 grouped fold 0: F1=0.857 (1s)
+siena bip 10s PN00 h=1     fold 0: F1=0.625 (3s)
+siena bip 10s PN00 grouped fold 1: F1=0.833 (2s)
+siena bip 10s PN00 h=1     fold 1: F1=1.000 (7s)
+siena bip 10s PN00 grouped fold 2: F1=0.526 (1s)
+siena bip 10s PN00 h=1     fold 2: F1=0.480 (5s)
+siena bip 10s PN00 grouped fold 3: F1=0.923 (2s)
+siena bip 10s PN00 h=1     fold 3: F1=0.923 (6s)
+siena bip 10s PN00 grouped fold 4: F1=0.833 (1s)
+siena bip 10s PN00 h=1     fold 4: F1=0.909 (6s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 4 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+siena bip 10s PN14 grouped fold 0: F1=0.800 (1s)
+siena bip 10s PN14 h=1     fold 0: F1=0.364 (3s)
+siena bip 10s PN14 grouped fold 1: F1=1.000 (1s)
+siena bip 10s PN14 h=1     fold 1: F1=0.000 (4s)
+siena bip 10s PN14 grouped fold 2: F1=0.667 (1s)
+siena bip 10s PN14 h=1     fold 2: F1=0.667 (3s)
+siena bip 10s PN14 grouped fold 3: F1=0.933 (1s)
+siena bip 10s PN14 h=1     fold 3: F1=0.714 (1s)
+siena ref  3s PN00 grouped fold 0: F1=0.864 (2s)
+siena ref  3s PN00 h=1     fold 0: F1=0.909 (5s)
+siena ref  3s PN00 grouped fold 1: F1=0.919 (2s)
+siena ref  3s PN00 h=1     fold 1: F1=0.600 (3s)
+siena ref  3s PN00 grouped fold 2: F1=0.576 (1s)
+siena ref  3s PN00 h=1     fold 2: F1=0.696 (4s)
+siena ref  3s PN00 grouped fold 3: F1=0.884 (2s)
+siena ref  3s PN00 h=1     fold 3: F1=0.933 (4s)
+siena ref  3s PN00 grouped fold 4: F1=0.737 (2s)
+siena ref  3s PN00 h=1     fold 4: F1=0.776 (2s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 4 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+siena ref  3s PN14 grouped fold 0: F1=0.778 (1s)
+siena ref  3s PN14 h=1     fold 0: F1=0.889 (2s)
+siena ref  3s PN14 grouped fold 1: F1=0.857 (1s)
+siena ref  3s PN14 h=1     fold 1: F1=0.857 (3s)
+siena ref  3s PN14 grouped fold 2: F1=0.688 (1s)
+siena ref  3s PN14 h=1     fold 2: F1=0.696 (3s)
+siena ref  3s PN14 grouped fold 3: F1=0.620 (1s)
+siena ref  3s PN14 h=1     fold 3: F1=0.667 (1s)
+siena ref 10s PN00 grouped fold 0: F1=0.923 (1s)
+siena ref 10s PN00 h=1     fold 0: F1=0.571 (3s)
+siena ref 10s PN00 grouped fold 1: F1=0.889 (2s)
+siena ref 10s PN00 h=1     fold 1: F1=0.833 (6s)
+siena ref 10s PN00 grouped fold 2: F1=0.588 (1s)
+siena ref 10s PN00 h=1     fold 2: F1=0.526 (5s)
+siena ref 10s PN00 grouped fold 3: F1=0.833 (2s)
+siena ref 10s PN00 h=1     fold 3: F1=0.923 (6s)
+siena ref 10s PN00 grouped fold 4: F1=0.769 (1s)
+siena ref 10s PN00 h=1     fold 4: F1=0.909 (6s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 4 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+siena ref 10s PN14 grouped fold 0: F1=0.667 (1s)
+siena ref 10s PN14 h=1     fold 0: F1=0.500 (3s)
+siena ref 10s PN14 grouped fold 1: F1=0.667 (1s)
+siena ref 10s PN14 h=1     fold 1: F1=1.000 (3s)
+siena ref 10s PN14 grouped fold 2: F1=0.571 (1s)
+siena ref 10s PN14 h=1     fold 2: F1=0.667 (3s)
+siena ref 10s PN14 grouped fold 3: F1=0.769 (1s)
+siena ref 10s PN14 h=1     fold 3: F1=0.000 (0s)
+
+# Experiment A, filtered: grouped vs. h=1 with band-pass filtering
+
+Windows filtered at load time: 0.5–45.0 Hz zero-phase Butterworth band-pass (order 4) after removing the window mean, plus a notch at the mains frequency (60 Hz CHB-MIT, 50 Hz Siena), `datasets.preprocessing.filter_windows`. Same folds, splits, seeds and TrainConfig as the unfiltered runs (`a_grouped_all`, `a1_kernel_height_h1_all`, `a_siena_5p`), which give the *raw* columns. GPU training varies by about ±0.02 F1 between identical runs.
+
+Per-fold rows: `a_filtered_folds.csv`. Generated by `experiments/experiment_a_filtered.py`.
+
+## Mean over the patients (F1, fold means averaged)
+
+| Dataset | Montage | Window | grouped raw | grouped filt | h=1 raw | h=1 filt | grouped − h=1 raw | grouped − h=1 filt |
+|---|---|---|---|---|---|---|---|---|
+| chbmit | bipolar | 3 s | 0.863 | 0.822 | 0.815 | 0.839 | +0.048 | -0.017 |
+| chbmit | bipolar | 10 s | 0.861 | 0.873 | 0.756 | 0.788 | +0.105 | +0.085 |
+| siena | bipolar | 3 s | 0.390 | 0.766 | 0.647 | 0.713 | -0.257 | +0.053 |
+| siena | bipolar | 10 s | 0.274 | 0.822 | 0.426 | 0.612 | -0.153 | +0.211 |
+| siena | referential | 3 s | 0.477 | 0.766 | 0.725 | 0.780 | -0.248 | -0.014 |
+| siena | referential | 10 s | 0.511 | 0.735 | 0.605 | 0.647 | -0.095 | +0.087 |
+
+## Per patient (F1, mean over folds)
+
+| Dataset | Montage | Window | Patient | grouped raw | grouped filt | h=1 raw | h=1 filt | grouped − h=1 raw | grouped − h=1 filt |
+|---|---|---|---|---|---|---|---|---|---|
+| chbmit | bipolar | 3 s | chb01 | 0.915 | 0.893 | 0.945 | 0.936 | -0.029 | -0.043 |
+| chbmit | bipolar | 3 s | chb18 | 0.810 | 0.751 | 0.685 | 0.743 | +0.125 | +0.008 |
+| chbmit | bipolar | 10 s | chb01 | 0.970 | 0.946 | 0.903 | 0.961 | +0.067 | -0.015 |
+| chbmit | bipolar | 10 s | chb18 | 0.752 | 0.800 | 0.609 | 0.615 | +0.142 | +0.185 |
+| siena | bipolar | 3 s | PN00 | 0.600 | 0.781 | 0.738 | 0.760 | -0.138 | +0.021 |
+| siena | bipolar | 3 s | PN14 | 0.180 | 0.751 | 0.556 | 0.667 | -0.376 | +0.084 |
+| siena | bipolar | 10 s | PN00 | 0.242 | 0.795 | 0.662 | 0.787 | -0.420 | +0.007 |
+| siena | bipolar | 10 s | PN14 | 0.305 | 0.850 | 0.191 | 0.436 | +0.114 | +0.414 |
+| siena | referential | 3 s | PN00 | 0.563 | 0.796 | 0.771 | 0.783 | -0.208 | +0.013 |
+| siena | referential | 3 s | PN14 | 0.391 | 0.736 | 0.679 | 0.777 | -0.287 | -0.042 |
+| siena | referential | 10 s | PN00 | 0.486 | 0.801 | 0.838 | 0.753 | -0.352 | +0.048 |
+| siena | referential | 10 s | PN14 | 0.535 | 0.668 | 0.373 | 0.542 | +0.163 | +0.127 |
+

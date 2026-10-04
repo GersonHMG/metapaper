@@ -1,0 +1,235 @@
+ 3s chb01 fold 0: F1=0.960 auroc=1.000 best_epoch=77 (6s)
+ 3s chb01 fold 1: F1=0.899 auroc=0.999 best_epoch=38 (2s)
+ 3s chb01 fold 2: F1=0.941 auroc=0.999 best_epoch=66 (4s)
+ 3s chb01 fold 3: F1=0.983 auroc=1.000 best_epoch=32 (2s)
+ 3s chb01 fold 4: F1=0.949 auroc=0.999 best_epoch=41 (3s)
+ 3s chb18 fold 0: F1=0.882 auroc=0.999 best_epoch=22 (1s)
+ 3s chb18 fold 1: F1=0.952 auroc=0.999 best_epoch=32 (2s)
+ 3s chb18 fold 2: F1=0.947 auroc=0.999 best_epoch=16 (1s)
+ 3s chb18 fold 3: F1=0.333 auroc=0.658 best_epoch=25 (1s)
+ 3s chb18 fold 4: F1=1.000 auroc=1.000 best_epoch=37 (2s)
+
+# Experiment A4: Grouped kernel at 1 s windows
+
+`AsymSETNetGroupedSegments`, 1 s segments, 0 TCN layers, Linear-ReLU-Linear head; window probability = mean of the segment probabilities (a single segment at 1 s). Same model, folds, seeds and `TrainConfig` as `b_tcn` 0 layers. Recording CV (5 folds, leave-one-recording-out when a patient has fewer recordings). See `experiments/experiment_a4_grouped_1s.md`.
+
+Cells are the mean of the per-patient fold means ± **standard deviation** across patients. Per-fold rows: `a4_grouped_1s_folds.csv`.
+
+## Table 3.1 / 3.2 values
+
+| Window | Patients | Accuracy | Sensitivity | Specificity | F1 | AUROC |
+|---|---|---|---|---|---|---|
+| 3 s | 2 | 0.970 ± 0.017 | 0.886 ± 0.106 | 0.986 ± 0.001 | 0.885 ± 0.087 | 0.965 ± 0.048 |
+
+## Comparison with the existing grouped cells (F1, same patients)
+
+| Window | Patients | A4 (this run) | `b_tcn` 0 layers | `SpatialNet(grouped)` (`a_grouped_all`) |
+|---|---|---|---|---|
+| 3 s | 2 | 0.885 ± 0.087 | 0.885 ± 0.072 | 0.863 ± 0.074 |
+
+## Sanity check
+
+GPU training is not bit-reproducible: expect about ±0.02 F1.
+
+**3 s window: A4 vs. `b_tcn` 0 layers, F1 per patient (fold mean)**
+
+| Patient | A4 | `b_tcn` | Difference |
+|---|---|---|---|
+| chb01 | 0.946 | 0.936 | +0.011 |
+| chb18 | 0.823 | 0.834 | -0.010 |
+
+Identical test recordings in every fold: **True**.
+
+## Per patient (F1, fold mean)
+
+| Patient | 3 s |
+|---|---|
+| chb01 | 0.946 |
+| chb18 | 0.823 |
+
+=== SANITY DONE
+ 1s chb01 fold 0: F1=0.868 auroc=0.985 best_epoch=10 (4s)
+ 1s chb01 fold 1: F1=0.790 auroc=0.990 best_epoch=15 (3s)
+ 1s chb01 fold 2: F1=0.827 auroc=0.983 best_epoch=17 (3s)
+ 1s chb01 fold 3: F1=0.961 auroc=0.997 best_epoch=9 (2s)
+ 1s chb01 fold 4: F1=0.867 auroc=0.989 best_epoch=19 (3s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+ 1s chb02 fold 0: F1=0.841 auroc=0.983 best_epoch=13 (1s)
+ 1s chb02 fold 1: F1=0.800 auroc=0.956 best_epoch=27 (1s)
+ 1s chb02 fold 2: F1=0.552 auroc=0.872 best_epoch=29 (2s)
+ 1s chb03 fold 0: F1=0.945 auroc=0.990 best_epoch=17 (3s)
+ 1s chb03 fold 1: F1=0.971 auroc=1.000 best_epoch=9 (2s)
+ 1s chb03 fold 2: F1=0.869 auroc=0.990 best_epoch=4 (2s)
+ 1s chb03 fold 3: F1=0.925 auroc=0.994 best_epoch=12 (2s)
+ 1s chb03 fold 4: F1=0.862 auroc=0.982 best_epoch=8 (2s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+ 1s chb04 fold 0: F1=0.339 auroc=0.291 best_epoch=15 (3s)
+ 1s chb04 fold 1: F1=0.797 auroc=0.977 best_epoch=31 (4s)
+ 1s chb04 fold 2: F1=0.209 auroc=0.588 best_epoch=28 (2s)
+ 1s chb05 fold 0: F1=0.881 auroc=0.988 best_epoch=16 (4s)
+ 1s chb05 fold 1: F1=0.905 auroc=0.992 best_epoch=7 (3s)
+ 1s chb05 fold 2: F1=0.900 auroc=0.983 best_epoch=14 (4s)
+ 1s chb05 fold 3: F1=0.892 auroc=0.980 best_epoch=20 (4s)
+ 1s chb05 fold 4: F1=0.736 auroc=0.975 best_epoch=24 (5s)
+ 1s chb06 fold 0: F1=0.857 auroc=0.960 best_epoch=20 (2s)
+ 1s chb06 fold 1: F1=0.750 auroc=0.940 best_epoch=37 (2s)
+ 1s chb06 fold 2: F1=0.797 auroc=0.959 best_epoch=99 (3s)
+ 1s chb06 fold 3: F1=0.323 auroc=0.598 best_epoch=16 (1s)
+ 1s chb06 fold 4: F1=0.714 auroc=0.935 best_epoch=27 (2s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+ 1s chb07 fold 0: F1=0.812 auroc=0.991 best_epoch=9 (2s)
+ 1s chb07 fold 1: F1=0.852 auroc=0.981 best_epoch=13 (2s)
+ 1s chb07 fold 2: F1=0.721 auroc=0.957 best_epoch=25 (2s)
+ 1s chb08 fold 0: F1=0.797 auroc=0.962 best_epoch=21 (8s)
+ 1s chb08 fold 1: F1=0.582 auroc=0.894 best_epoch=13 (6s)
+ 1s chb08 fold 2: F1=0.875 auroc=0.983 best_epoch=21 (8s)
+ 1s chb08 fold 3: F1=0.820 auroc=0.984 best_epoch=17 (7s)
+ 1s chb08 fold 4: F1=0.704 auroc=0.941 best_epoch=12 (5s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+ 1s chb09 fold 0: F1=0.725 auroc=0.950 best_epoch=21 (2s)
+ 1s chb09 fold 1: F1=0.740 auroc=0.960 best_epoch=17 (1s)
+ 1s chb09 fold 2: F1=0.771 auroc=0.914 best_epoch=27 (3s)
+ 1s chb10 fold 0: F1=0.813 auroc=0.976 best_epoch=13 (3s)
+ 1s chb10 fold 1: F1=0.824 auroc=0.928 best_epoch=5 (2s)
+ 1s chb10 fold 2: F1=0.881 auroc=0.973 best_epoch=20 (4s)
+ 1s chb10 fold 3: F1=0.885 auroc=0.974 best_epoch=19 (4s)
+ 1s chb10 fold 4: F1=0.687 auroc=0.969 best_epoch=7 (2s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+ 1s chb11 fold 0: F1=0.884 auroc=0.992 best_epoch=10 (4s)
+ 1s chb11 fold 1: F1=0.885 auroc=0.990 best_epoch=19 (5s)
+ 1s chb11 fold 2: F1=0.710 auroc=0.896 best_epoch=99 (2s)
+ 1s chb12 fold 0: F1=0.745 auroc=0.962 best_epoch=22 (9s)
+ 1s chb12 fold 1: F1=0.812 auroc=0.943 best_epoch=30 (12s)
+ 1s chb12 fold 2: F1=0.673 auroc=0.899 best_epoch=24 (8s)
+ 1s chb12 fold 3: F1=0.667 auroc=0.913 best_epoch=12 (5s)
+ 1s chb12 fold 4: F1=0.833 auroc=0.927 best_epoch=28 (11s)
+ 1s chb13 fold 0: F1=0.835 auroc=0.977 best_epoch=15 (3s)
+ 1s chb13 fold 1: F1=0.602 auroc=0.915 best_epoch=16 (4s)
+ 1s chb13 fold 2: F1=0.575 auroc=0.774 best_epoch=12 (2s)
+ 1s chb13 fold 3: F1=0.862 auroc=0.976 best_epoch=5 (2s)
+ 1s chb13 fold 4: F1=0.663 auroc=0.925 best_epoch=15 (3s)
+ 1s chb14 fold 0: F1=0.677 auroc=0.959 best_epoch=16 (1s)
+ 1s chb14 fold 1: F1=0.655 auroc=0.947 best_epoch=7 (1s)
+ 1s chb14 fold 2: F1=0.747 auroc=0.918 best_epoch=4 (1s)
+ 1s chb14 fold 3: F1=0.689 auroc=0.942 best_epoch=19 (1s)
+ 1s chb14 fold 4: F1=0.513 auroc=0.861 best_epoch=7 (1s)
+ 1s chb15 fold 0: F1=0.947 auroc=1.000 best_epoch=15 (16s)
+ 1s chb15 fold 1: F1=0.921 auroc=0.992 best_epoch=26 (18s)
+ 1s chb15 fold 2: F1=0.888 auroc=0.975 best_epoch=21 (11s)
+ 1s chb15 fold 3: F1=0.870 auroc=0.987 best_epoch=25 (21s)
+ 1s chb15 fold 4: F1=0.886 auroc=0.985 best_epoch=20 (16s)
+ 1s chb16 fold 0: F1=0.632 auroc=0.854 best_epoch=39 (1s)
+ 1s chb16 fold 1: F1=0.455 auroc=0.859 best_epoch=29 (1s)
+ 1s chb16 fold 2: F1=0.212 auroc=0.417 best_epoch=42 (1s)
+ 1s chb16 fold 3: F1=0.462 auroc=0.756 best_epoch=45 (1s)
+ 1s chb16 fold 4: F1=0.308 auroc=0.624 best_epoch=18 (0s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+ 1s chb17 fold 0: F1=0.824 auroc=0.965 best_epoch=20 (2s)
+ 1s chb17 fold 1: F1=0.872 auroc=0.987 best_epoch=18 (2s)
+ 1s chb17 fold 2: F1=0.732 auroc=0.937 best_epoch=8 (1s)
+ 1s chb18 fold 0: F1=0.417 auroc=0.644 best_epoch=30 (4s)
+ 1s chb18 fold 1: F1=0.541 auroc=0.978 best_epoch=13 (2s)
+ 1s chb18 fold 2: F1=0.862 auroc=0.971 best_epoch=23 (3s)
+ 1s chb18 fold 3: F1=0.900 auroc=0.995 best_epoch=27 (3s)
+ 1s chb18 fold 4: F1=0.849 auroc=0.983 best_epoch=9 (1s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+ 1s chb19 fold 0: F1=0.684 auroc=0.855 best_epoch=27 (2s)
+ 1s chb19 fold 1: F1=0.831 auroc=0.974 best_epoch=31 (2s)
+ 1s chb19 fold 2: F1=0.821 auroc=0.971 best_epoch=18 (2s)
+ 1s chb20 fold 0: F1=0.839 auroc=0.975 best_epoch=7 (1s)
+ 1s chb20 fold 1: F1=0.901 auroc=0.997 best_epoch=17 (2s)
+ 1s chb20 fold 2: F1=0.903 auroc=0.990 best_epoch=13 (2s)
+ 1s chb20 fold 3: F1=0.832 auroc=0.984 best_epoch=13 (2s)
+ 1s chb20 fold 4: F1=0.744 auroc=0.927 best_epoch=13 (2s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 4 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+ 1s chb21 fold 0: F1=0.785 auroc=0.969 best_epoch=36 (2s)
+ 1s chb21 fold 1: F1=0.838 auroc=0.972 best_epoch=28 (2s)
+ 1s chb21 fold 2: F1=0.753 auroc=0.953 best_epoch=15 (1s)
+ 1s chb21 fold 3: F1=0.706 auroc=0.986 best_epoch=24 (2s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+ 1s chb22 fold 0: F1=0.912 auroc=0.996 best_epoch=28 (2s)
+ 1s chb22 fold 1: F1=0.864 auroc=0.995 best_epoch=19 (1s)
+ 1s chb22 fold 2: F1=0.836 auroc=0.977 best_epoch=24 (2s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+ 1s chb23 fold 0: F1=0.869 auroc=0.991 best_epoch=7 (2s)
+ 1s chb23 fold 1: F1=0.929 auroc=0.994 best_epoch=11 (3s)
+ 1s chb23 fold 2: F1=0.862 auroc=0.983 best_epoch=15 (2s)
+ 1s chb24 fold 0: F1=0.798 auroc=0.932 best_epoch=22 (4s)
+ 1s chb24 fold 1: F1=0.642 auroc=0.887 best_epoch=9 (2s)
+ 1s chb24 fold 2: F1=0.791 auroc=0.911 best_epoch=17 (4s)
+ 1s chb24 fold 3: F1=0.762 auroc=0.896 best_epoch=22 (5s)
+ 1s chb24 fold 4: F1=0.683 auroc=0.804 best_epoch=18 (4s)
+
+# Experiment A4: Grouped kernel at 1 s windows
+
+`AsymSETNetGroupedSegments`, 1 s segments, 0 TCN layers, Linear-ReLU-Linear head; window probability = mean of the segment probabilities (a single segment at 1 s). Same model, folds, seeds and `TrainConfig` as `b_tcn` 0 layers. Recording CV (5 folds, leave-one-recording-out when a patient has fewer recordings). See `experiments/experiment_a4_grouped_1s.md`.
+
+Cells are the mean of the per-patient fold means ± **standard deviation** across patients. Per-fold rows: `a4_grouped_1s_folds.csv`.
+
+## Table 3.1 / 3.2 values
+
+| Window | Patients | Accuracy | Sensitivity | Specificity | F1 | AUROC |
+|---|---|---|---|---|---|---|
+| 1 s | 24 | 0.900 ± 0.074 | 0.835 ± 0.090 | 0.913 ± 0.075 | 0.762 ± 0.124 | 0.928 ± 0.089 |
+| 3 s | 2 | 0.970 ± 0.017 | 0.886 ± 0.106 | 0.986 ± 0.001 | 0.885 ± 0.087 | 0.965 ± 0.048 |
+
+## Comparison with the existing grouped cells (F1, same patients)
+
+| Window | Patients | A4 (this run) | `b_tcn` 0 layers | `SpatialNet(grouped)` (`a_grouped_all`) |
+|---|---|---|---|---|
+| 1 s | 24 | 0.762 ± 0.124 | — | 0.762 ± 0.120 |
+| 3 s | 2 | 0.885 ± 0.087 | 0.885 ± 0.072 | 0.863 ± 0.074 |
+
+## Sanity check
+
+GPU training is not bit-reproducible: expect about ±0.02 F1.
+
+**3 s window: A4 vs. `b_tcn` 0 layers, F1 per patient (fold mean)**
+
+| Patient | A4 | `b_tcn` | Difference |
+|---|---|---|---|
+| chb01 | 0.946 | 0.936 | +0.011 |
+| chb18 | 0.823 | 0.834 | -0.010 |
+
+Identical test recordings in every fold: **True**.
+
+## Per patient (F1, fold mean)
+
+| Patient | 1 s | 3 s |
+|---|---|---|
+| chb01 | 0.863 | 0.946 |
+| chb02 | 0.731 | — |
+| chb03 | 0.914 | — |
+| chb04 | 0.448 | — |
+| chb05 | 0.863 | — |
+| chb06 | 0.688 | — |
+| chb07 | 0.795 | — |
+| chb08 | 0.756 | — |
+| chb09 | 0.745 | — |
+| chb10 | 0.818 | — |
+| chb11 | 0.826 | — |
+| chb12 | 0.746 | — |
+| chb13 | 0.707 | — |
+| chb14 | 0.656 | — |
+| chb15 | 0.902 | — |
+| chb16 | 0.413 | — |
+| chb17 | 0.809 | — |
+| chb18 | 0.714 | 0.823 |
+| chb19 | 0.779 | — |
+| chb20 | 0.844 | — |
+| chb21 | 0.770 | — |
+| chb22 | 0.871 | — |
+| chb23 | 0.886 | — |
+| chb24 | 0.735 | — |
+
+=== EXIT 0

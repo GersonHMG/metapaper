@@ -54,6 +54,17 @@ ELECTRODE_GROUPS = {
 # temporal chain is continuous: FP1-F7 -> F7-T7 -> T7-P7 -> P7-O1.
 FLIP_CHANNELS = [17]
 
+# Referential montage (Siena, 19 electrodes: FP1 FP2 F7 F3 FZ F4 F8 T7 C3 CZ C4
+# T8 P7 P3 PZ P4 P8 O1 O2). The double-banana chains on the electrodes
+# themselves; FP1/FP2/O1/O2 end two chains each, so groups overlap. No flips.
+REFERENTIAL_GROUPS = {
+    "left_temporal":      [0, 2, 7, 12, 17],   # FP1 F7 T7 P7 O1
+    "left_parasagittal":  [0, 3, 8, 13, 17],   # FP1 F3 C3 P3 O1
+    "right_parasagittal": [1, 5, 10, 15, 18],  # FP2 F4 C4 P4 O2
+    "right_temporal":     [1, 6, 11, 16, 18],  # FP2 F8 T8 P8 O2
+    "midline":            [4, 9, 14],          # FZ CZ PZ
+}
+
 
 # --------------------------------------------------------------------------- #
 # 1. Squeeze-and-Excitation block (unchanged)

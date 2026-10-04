@@ -47,9 +47,13 @@ cd notebooks && PYTHONPATH=/home/gmarihuan/metapaper python lopocv_experiments.p
     - Stores each patient's seizure recordings as one **continuous** signal: `X` (21, S·256) float16, plus `sec_label` (one label per second), `rec_names` and `rec_bounds`.
     - Windows are cut at load time, so one dataset serves every window length and stride.
     - Used for labelling each 1 s segment, including windows that cross seizure onsets and offsets.
+  - `build_continuous_dataset.py` writes `datasets/data/continuous/per_patient/chbXX/` (`X.npy`, a float16 memmap of shape (21, S·256), plus `meta.npz` with `sec_label`, `rec_names`, `rec_bounds` and `rec_has_seizure`). About 35 GB.
+    - Stores **every** recording, seizure-free ones included, as one continuous signal with one label per second, for long-context models and event-level metrics.
+    - Builds patients in parallel (`--jobs`) and skips patients that are already built.
   - **Loaders (use these to read the data; they don't import MNE):**
     - `balanced_windows.py`: `load(patients=, exclude=)` returns `X, y, patient`. Also `load_patient(name)` and `lopo_splits(patient)`.
     - `recording_cv.py`: `load_patient(name, window_sec)` returns `X, y, recording`. Also `iter_folds(name, window_sec, n_splits, balance_train=)`, `iter_patients(window_sec, exclude=)` and `recording_folds`.
+    - `continuous.py`: `load_patient(name)` (`X` is a read-only memmap) and `split_folds(d)`. Seizure recordings are split exactly as in `transition.split_folds`; seizure-free recordings go round-robin to the folds.
     - `transition.py`: `load_patient(name)`, `split_folds(d, n_splits)` (by recording), and `fold_windows(d, train_recs, test_recs, window_sec, ...)`.
       - `fold_windows` returns train/val/test dicts with `X`, `Y` (n, W) per-segment labels, and `boundary` (n, W).
       - Train and validation use stride-1 windows, with validation taken from ~60 s time blocks so the two sets share no seconds.
@@ -71,6 +75,8 @@ cd notebooks && PYTHONPATH=/home/gmarihuan/metapaper python lopocv_experiments.p
   - `AsymSETNetSegments`: one logit per segment, shape (B, N).
   - Also `asymsetnet_grouped.py` (`AsymSETNetGrouped`, with `ELECTRODE_GROUPS` and `FLIP_CHANNELS` indexed into the 21-channel order).
   - `spatial_net.py` (`SpatialNet(spatial="height"|"grouped", kernel_height=)`): the spatial module on the whole window, then GAP and a linear head. It has no TCN and no `n_segments`, so any window length works.
+  - `asymsetnet_grouped_segments.py` (`AsymSETNetGroupedSegments(n_segments, tcn_channels=(), causal=False)`): the grouped spatial module per segment, an optional TCN, and the `SpatialNet` head shared by every segment. It returns logits of shape (B, N). `predict_proba` averages the segment probabilities into one window probability. `FocalLoss` broadcasts window labels (B,) over (B, N) logits. `freeze_spatial()` and `from_pretrained_spatial(pretrained, tcn_channels)` support Experiment B2 (frozen spatial module, new TCN and head). Freezing also keeps the spatial module in eval mode, so its BatchNorm statistics stay fixed.
+  - `temporal_head.py` (`TemporalHead`): a TCN over per-second embeddings with one logit per second; it runs on sequences of any length. Each layer has two dilated convolutions, so the receptive field is 1 + 4·(2ⁿ − 1) s: 13/29/61/125 s for 2–5 layers.
 - `notebooks/`: experiments.
   - `lopocv_experiments.py` runs N repeated LOPO-CV runs per model and writes `<model>_lopocv/run_<x>.csv`. It imports `lopocv.*` and `models.*`, so run it from `notebooks/` with `metapaper/` on `PYTHONPATH`.
   - `lopocv/run_lopocv_fold.py` has `run_fold` (Adam, BCEWithLogits, early stopping). It returns a dict: `tp, tn, fp, fn, acc, sen, spec, f1`.

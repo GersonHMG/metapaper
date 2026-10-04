@@ -187,3 +187,28 @@ def segments_to_windows(
     if groups is not None:
         return X, y, np.asarray(g_windows)
     return X, y
+
+def filter_windows(X, sfreq=256, band=(0.5, 45.0), notch=None, order=4, chunk=512):
+    """
+    Zero-phase filter every window along time: remove the window mean, then a
+    Butterworth band-pass (`band`, Hz) and an optional IIR notch at `notch` Hz
+    (mains: 50 for Siena, 60 for CHB-MIT), applied forward and backward.
+
+    Windows are filtered one by one, so the edges see no neighbouring signal; an
+    odd reflection of the whole window pads them to limit the transients of the
+    0.5 Hz high-pass.
+
+    X : np.ndarray (n_windows, n_channels, window_samples). Returns float32,
+    same shape. Processed `chunk` windows at a time to bound memory.
+    """
+    from scipy.signal import butter, iirnotch, sosfiltfilt, tf2sos
+
+    sos = butter(order, band, btype="bandpass", fs=sfreq, output="sos")
+    if notch is not None:
+        sos = np.vstack([sos, tf2sos(*iirnotch(notch, Q=30, fs=sfreq))])
+    out = np.empty(X.shape, dtype=np.float32)
+    for i in range(0, len(X), chunk):
+        x = X[i:i + chunk].astype(np.float64)
+        x -= x.mean(axis=-1, keepdims=True)
+        out[i:i + chunk] = sosfiltfilt(sos, x, axis=-1, padtype="odd", padlen=x.shape[-1] - 1)
+    return out

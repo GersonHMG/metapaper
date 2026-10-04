@@ -1,0 +1,3 @@
+patient,window_sec,fold,test_recordings,n_train_win,n_val_win,n_test_seg,n_boundary_seg,best_epoch,train_loss,val_loss,TP,FP,TN,FN,bTP,bFP,bTN,bFN,img_TP,img_FP,img_TN,img_FN,img_bTP,img_bFP,img_bTN,img_bFN,auroc,train_sec
+chb01,3,0,chb01_15.edf;chb01_21.edf,1482,420,810,16,19,0.019272507625784543,0.02456319894126348,110,7,670,23,4,4,4,4,2161,1184,13033,632,74,66,102,94,0.9848069212914117,217.19799327850342
+chb01,3,1,chb01_03.edf;chb01_18.edf,1614,318,810,16,9,0.022923058844544885,0.020512718526581226,111,0,680,19,2,0,8,6,2068,875,13405,662,47,38,130,121,0.9785294117647059,240.96829199790955

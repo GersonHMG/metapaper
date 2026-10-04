@@ -1,0 +1,331 @@
+chb01  3s L=0 fold 0: F1 all=0.743 boundary=0.667 (shuffled 0.667) (3s)
+chb01  3s L=1 fold 0: F1 all=0.845 boundary=0.824 (shuffled 0.842) (3s)
+chb01  3s L=2 fold 0: F1 all=0.858 boundary=0.824 (shuffled 0.889) (3s)
+chb01  3s L=3 fold 0: F1 all=0.874 boundary=0.889 (shuffled 0.889) (3s)
+chb01  3s L=0 fold 1: F1 all=0.870 boundary=0.824 (shuffled 0.824) (3s)
+chb01  3s L=1 fold 1: F1 all=0.908 boundary=0.737 (shuffled 0.737) (3s)
+chb01  3s L=2 fold 1: F1 all=0.917 boundary=0.778 (shuffled 0.737) (2s)
+chb01  3s L=3 fold 1: F1 all=0.947 boundary=0.737 (shuffled 0.737) (3s)
+chb01  3s L=0 fold 2: F1 all=0.860 boundary=0.750 (shuffled 0.750) (6s)
+chb01  3s L=1 fold 2: F1 all=0.714 boundary=0.000 (shuffled 0.333) (7s)
+chb01  3s L=2 fold 2: F1 all=0.857 boundary=0.667 (shuffled 0.333) (7s)
+chb01  3s L=3 fold 2: F1 all=0.791 boundary=0.400 (shuffled 0.000) (7s)
+chb01  3s L=0 fold 3: F1 all=0.814 boundary=0.600 (shuffled 0.600) (3s)
+chb01  3s L=1 fold 3: F1 all=0.800 boundary=0.400 (shuffled 0.400) (5s)
+chb01  3s L=2 fold 3: F1 all=0.800 boundary=0.400 (shuffled 0.400) (5s)
+chb01  3s L=3 fold 3: F1 all=0.857 boundary=0.667 (shuffled 0.667) (7s)
+chb01  3s L=0 fold 4: F1 all=0.856 boundary=0.500 (shuffled 0.500) (7s)
+chb01  3s L=1 fold 4: F1 all=0.946 boundary=0.667 (shuffled 0.667) (4s)
+chb01  3s L=2 fold 4: F1 all=0.943 boundary=0.667 (shuffled 0.667) (7s)
+chb01  3s L=3 fold 4: F1 all=0.946 boundary=0.500 (shuffled 0.500) (6s)
+chb01  5s L=0 fold 0: F1 all=0.812 boundary=0.706 (shuffled 0.706) (3s)
+chb01  5s L=1 fold 0: F1 all=0.912 boundary=0.800 (shuffled 0.625) (4s)
+chb01  5s L=2 fold 0: F1 all=0.904 boundary=0.800 (shuffled 0.667) (5s)
+chb01  5s L=3 fold 0: F1 all=0.929 boundary=0.824 (shuffled 0.706) (4s)
+chb01  5s L=0 fold 1: F1 all=0.841 boundary=0.824 (shuffled 0.824) (3s)
+chb01  5s L=1 fold 1: F1 all=0.920 boundary=0.762 (shuffled 0.800) (4s)
+chb01  5s L=2 fold 1: F1 all=0.948 boundary=0.800 (shuffled 0.800) (3s)
+chb01  5s L=3 fold 1: F1 all=0.952 boundary=0.800 (shuffled 0.800) (4s)
+chb01  5s L=0 fold 2: F1 all=0.828 boundary=0.667 (shuffled 0.667) (10s)
+chb01  5s L=1 fold 2: F1 all=0.805 boundary=0.667 (shuffled 0.750) (10s)
+chb01  5s L=2 fold 2: F1 all=0.786 boundary=0.667 (shuffled 0.857) (11s)
+chb01  5s L=3 fold 2: F1 all=0.782 boundary=0.667 (shuffled 0.857) (12s)
+chb01  5s L=0 fold 3: F1 all=0.820 boundary=0.545 (shuffled 0.545) (5s)
+chb01  5s L=1 fold 3: F1 all=0.847 boundary=0.444 (shuffled 0.545) (6s)
+chb01  5s L=2 fold 3: F1 all=0.847 boundary=0.444 (shuffled 0.545) (5s)
+chb01  5s L=3 fold 3: F1 all=0.871 boundary=0.667 (shuffled 0.667) (5s)
+chb01  5s L=0 fold 4: F1 all=0.891 boundary=0.286 (shuffled 0.286) (8s)
+chb01  5s L=1 fold 4: F1 all=0.926 boundary=0.500 (shuffled 0.500) (4s)
+chb01  5s L=2 fold 4: F1 all=0.970 boundary=0.500 (shuffled 0.500) (6s)
+chb01  5s L=3 fold 4: F1 all=0.970 boundary=0.500 (shuffled 0.500) (8s)
+chb01  8s L=0 fold 0: F1 all=0.811 boundary=0.667 (shuffled 0.667) (5s)
+chb01  8s L=1 fold 0: F1 all=0.879 boundary=0.700 (shuffled 0.588) (5s)
+chb01  8s L=2 fold 0: F1 all=0.939 boundary=0.667 (shuffled 0.588) (6s)
+chb01  8s L=3 fold 0: F1 all=0.938 boundary=0.737 (shuffled 0.737) (6s)
+chb01  8s L=0 fold 1: F1 all=0.826 boundary=0.824 (shuffled 0.824) (5s)
+chb01  8s L=1 fold 1: F1 all=0.931 boundary=0.737 (shuffled 0.750) (5s)
+chb01  8s L=2 fold 1: F1 all=0.977 boundary=0.842 (shuffled 0.737) (6s)
+chb01  8s L=3 fold 1: F1 all=0.966 boundary=0.778 (shuffled 0.667) (5s)
+chb01  8s L=0 fold 2: F1 all=0.822 boundary=0.889 (shuffled 0.889) (8s)
+chb01  8s L=1 fold 2: F1 all=0.818 boundary=0.667 (shuffled 0.667) (13s)
+chb01  8s L=2 fold 2: F1 all=0.800 boundary=0.400 (shuffled 0.400) (11s)
+chb01  8s L=3 fold 2: F1 all=0.741 boundary=0.400 (shuffled 0.400) (9s)
+chb01  8s L=0 fold 3: F1 all=0.915 boundary=0.667 (shuffled 0.667) (9s)
+chb01  8s L=1 fold 3: F1 all=0.893 boundary=0.400 (shuffled 0.667) (7s)
+chb01  8s L=2 fold 3: F1 all=0.915 boundary=0.667 (shuffled 0.667) (7s)
+chb01  8s L=3 fold 3: F1 all=0.915 boundary=0.667 (shuffled 0.667) (7s)
+chb01  8s L=0 fold 4: F1 all=0.853 boundary=0.500 (shuffled 0.500) (9s)
+chb01  8s L=1 fold 4: F1 all=0.947 boundary=0.571 (shuffled 0.000) (7s)
+chb01  8s L=2 fold 4: F1 all=0.980 boundary=0.400 (shuffled 0.000) (10s)
+chb01  8s L=3 fold 4: F1 all=0.985 boundary=0.667 (shuffled 0.571) (9s)
+chb01 10s L=0 fold 0: F1 all=0.762 boundary=0.667 (shuffled 0.667) (5s)
+chb01 10s L=1 fold 0: F1 all=0.923 boundary=0.824 (shuffled 0.625) (5s)
+chb01 10s L=2 fold 0: F1 all=0.949 boundary=0.842 (shuffled 0.588) (7s)
+chb01 10s L=3 fold 0: F1 all=0.970 boundary=0.824 (shuffled 0.588) (6s)
+chb01 10s L=0 fold 1: F1 all=0.879 boundary=0.824 (shuffled 0.824) (5s)
+chb01 10s L=1 fold 1: F1 all=0.936 boundary=0.778 (shuffled 0.667) (5s)
+chb01 10s L=2 fold 1: F1 all=0.967 boundary=0.842 (shuffled 0.667) (6s)
+chb01 10s L=3 fold 1: F1 all=0.962 boundary=0.824 (shuffled 0.625) (5s)
+chb01 10s L=0 fold 2: F1 all=0.789 boundary=0.750 (shuffled 0.750) (9s)
+chb01 10s L=1 fold 2: F1 all=0.774 boundary=0.667 (shuffled 0.667) (11s)
+chb01 10s L=2 fold 2: F1 all=0.773 boundary=0.400 (shuffled 0.667) (15s)
+chb01 10s L=3 fold 2: F1 all=0.809 boundary=0.400 (shuffled 0.667) (19s)
+chb01 10s L=0 fold 3: F1 all=0.706 boundary=0.400 (shuffled 0.400) (6s)
+chb01 10s L=1 fold 3: F1 all=0.833 boundary=0.400 (shuffled 0.667) (6s)
+chb01 10s L=2 fold 3: F1 all=0.867 boundary=0.600 (shuffled 0.667) (6s)
+chb01 10s L=3 fold 3: F1 all=0.900 boundary=0.800 (shuffled 0.800) (7s)
+chb01 10s L=0 fold 4: F1 all=0.828 boundary=0.286 (shuffled 0.286) (8s)
+chb01 10s L=1 fold 4: F1 all=0.941 boundary=0.857 (shuffled 0.500) (6s)
+chb01 10s L=2 fold 4: F1 all=0.949 boundary=0.000 (shuffled 0.400) (8s)
+chb01 10s L=3 fold 4: F1 all=0.980 boundary=0.667 (shuffled 0.571) (10s)
+chb18  3s L=0 fold 0: F1 all=0.659 boundary=0.182 (shuffled 0.182) (2s)
+chb18  3s L=1 fold 0: F1 all=0.715 boundary=0.364 (shuffled 0.364) (2s)
+chb18  3s L=2 fold 0: F1 all=0.684 boundary=0.364 (shuffled 0.333) (2s)
+chb18  3s L=3 fold 0: F1 all=0.726 boundary=0.364 (shuffled 0.364) (2s)
+chb18  3s L=0 fold 1: F1 all=0.903 boundary=0.667 (shuffled 0.667) (3s)
+chb18  3s L=1 fold 1: F1 all=0.947 boundary=0.667 (shuffled 0.667) (3s)
+chb18  3s L=2 fold 1: F1 all=0.969 boundary=0.667 (shuffled 0.667) (3s)
+chb18  3s L=3 fold 1: F1 all=0.969 boundary=0.667 (shuffled 0.667) (2s)
+chb18  3s L=0 fold 2: F1 all=0.685 boundary=0.400 (shuffled 0.400) (2s)
+chb18  3s L=1 fold 2: F1 all=0.484 boundary=0.400 (shuffled 0.400) (2s)
+chb18  3s L=2 fold 2: F1 all=0.717 boundary=0.400 (shuffled 0.400) (2s)
+chb18  3s L=3 fold 2: F1 all=0.660 boundary=0.400 (shuffled 0.400) (2s)
+chb18  3s L=0 fold 3: F1 all=0.824 boundary=0.750 (shuffled 0.750) (2s)
+chb18  3s L=1 fold 3: F1 all=0.965 boundary=1.000 (shuffled 0.889) (3s)
+chb18  3s L=2 fold 3: F1 all=0.924 boundary=1.000 (shuffled 0.889) (3s)
+chb18  3s L=3 fold 3: F1 all=0.917 boundary=0.889 (shuffled 0.889) (3s)
+chb18  3s L=0 fold 4: F1 all=0.503 boundary=0.667 (shuffled 0.667) (2s)
+chb18  3s L=1 fold 4: F1 all=0.604 boundary=0.667 (shuffled 0.667) (3s)
+chb18  3s L=2 fold 4: F1 all=0.597 boundary=0.667 (shuffled 0.667) (2s)
+chb18  3s L=3 fold 4: F1 all=0.652 boundary=0.667 (shuffled 0.667) (2s)
+chb18  5s L=0 fold 0: F1 all=0.731 boundary=0.333 (shuffled 0.333) (3s)
+chb18  5s L=1 fold 0: F1 all=0.736 boundary=0.333 (shuffled 0.500) (2s)
+chb18  5s L=2 fold 0: F1 all=0.725 boundary=0.500 (shuffled 0.429) (2s)
+chb18  5s L=3 fold 0: F1 all=0.731 boundary=0.462 (shuffled 0.500) (3s)
+chb18  5s L=0 fold 1: F1 all=0.884 boundary=0.667 (shuffled 0.667) (5s)
+chb18  5s L=1 fold 1: F1 all=0.950 boundary=0.667 (shuffled 0.333) (4s)
+chb18  5s L=2 fold 1: F1 all=0.960 boundary=0.667 (shuffled 0.571) (4s)
+chb18  5s L=3 fold 1: F1 all=0.949 boundary=0.400 (shuffled 0.400) (6s)
+chb18  5s L=0 fold 2: F1 all=0.826 boundary=0.400 (shuffled 0.400) (3s)
+chb18  5s L=1 fold 2: F1 all=0.568 boundary=0.400 (shuffled 0.400) (2s)
+chb18  5s L=2 fold 2: F1 all=0.939 boundary=0.571 (shuffled 0.571) (2s)
+chb18  5s L=3 fold 2: F1 all=0.741 boundary=0.400 (shuffled 0.400) (2s)
+chb18  5s L=0 fold 3: F1 all=0.895 boundary=0.571 (shuffled 0.571) (3s)
+chb18  5s L=1 fold 3: F1 all=0.909 boundary=0.000 (shuffled 0.000) (5s)
+chb18  5s L=2 fold 3: F1 all=0.909 boundary=0.000 (shuffled 0.000) (4s)
+chb18  5s L=3 fold 3: F1 all=0.909 boundary=0.000 (shuffled 0.000) (4s)
+chb18  5s L=0 fold 4: F1 all=0.539 boundary=0.667 (shuffled 0.667) (4s)
+chb18  5s L=1 fold 4: F1 all=0.597 boundary=0.667 (shuffled 0.667) (5s)
+chb18  5s L=2 fold 4: F1 all=0.648 boundary=0.667 (shuffled 0.667) (5s)
+chb18  5s L=3 fold 4: F1 all=0.697 boundary=0.667 (shuffled 0.667) (5s)
+chb18  8s L=0 fold 0: F1 all=0.667 boundary=0.333 (shuffled 0.333) (3s)
+chb18  8s L=1 fold 0: F1 all=0.725 boundary=0.333 (shuffled 0.182) (3s)
+chb18  8s L=2 fold 0: F1 all=0.713 boundary=0.222 (shuffled 0.222) (3s)
+chb18  8s L=3 fold 0: F1 all=0.742 boundary=0.400 (shuffled 0.222) (4s)
+chb18  8s L=0 fold 1: F1 all=0.875 boundary=0.667 (shuffled 0.667) (8s)
+chb18  8s L=1 fold 1: F1 all=0.936 boundary=0.667 (shuffled 0.400) (5s)
+chb18  8s L=2 fold 1: F1 all=0.969 boundary=0.667 (shuffled 0.400) (7s)
+chb18  8s L=3 fold 1: F1 all=0.970 boundary=0.857 (shuffled 1.000) (5s)
+chb18  8s L=0 fold 2: F1 all=0.824 boundary=0.400 (shuffled 0.400) (4s)
+chb18  8s L=1 fold 2: F1 all=0.857 boundary=0.400 (shuffled 0.400) (3s)
+chb18  8s L=2 fold 2: F1 all=0.653 boundary=0.400 (shuffled 0.400) (3s)
+chb18  8s L=3 fold 2: F1 all=0.598 boundary=0.400 (shuffled 0.400) (3s)
+chb18  8s L=0 fold 3: F1 all=0.899 boundary=0.000 (shuffled 0.000) (5s)
+chb18  8s L=1 fold 3: F1 all=0.904 boundary=0.571 (shuffled 0.286) (6s)
+chb18  8s L=2 fold 3: F1 all=0.895 boundary=0.333 (shuffled 0.333) (12s)
+chb18  8s L=3 fold 3: F1 all=0.874 boundary=0.571 (shuffled 0.333) (6s)
+chb18  8s L=0 fold 4: F1 all=0.481 boundary=0.667 (shuffled 0.667) (5s)
+chb18  8s L=1 fold 4: F1 all=0.672 boundary=0.667 (shuffled 0.667) (5s)
+chb18  8s L=2 fold 4: F1 all=0.672 boundary=0.667 (shuffled 0.727) (5s)
+chb18  8s L=3 fold 4: F1 all=0.844 boundary=0.800 (shuffled 0.667) (7s)
+chb18 10s L=0 fold 0: F1 all=0.675 boundary=0.333 (shuffled 0.333) (3s)
+chb18 10s L=1 fold 0: F1 all=0.761 boundary=0.333 (shuffled 0.462) (3s)
+chb18 10s L=2 fold 0: F1 all=0.784 boundary=0.462 (shuffled 0.333) (3s)
+chb18 10s L=3 fold 0: F1 all=0.719 boundary=0.545 (shuffled 0.222) (4s)
+chb18 10s L=0 fold 1: F1 all=0.872 boundary=0.400 (shuffled 0.400) (5s)
+chb18 10s L=1 fold 1: F1 all=0.959 boundary=0.667 (shuffled 0.333) (5s)
+chb18 10s L=2 fold 1: F1 all=0.980 boundary=0.667 (shuffled 0.400) (6s)
+chb18 10s L=3 fold 1: F1 all=0.947 boundary=0.000 (shuffled 0.400) (5s)
+chb18 10s L=0 fold 2: F1 all=0.826 boundary=0.400 (shuffled 0.400) (3s)
+chb18 10s L=1 fold 2: F1 all=0.824 boundary=0.400 (shuffled 0.400) (3s)
+chb18 10s L=2 fold 2: F1 all=0.437 boundary=0.400 (shuffled 0.400) (3s)
+chb18 10s L=3 fold 2: F1 all=0.381 boundary=0.000 (shuffled 0.400) (3s)
+chb18 10s L=0 fold 3: F1 all=0.889 boundary=0.571 (shuffled 0.571) (4s)
+chb18 10s L=1 fold 3: F1 all=0.885 boundary=0.000 (shuffled 0.400) (5s)
+chb18 10s L=2 fold 3: F1 all=0.920 boundary=0.333 (shuffled 0.571) (8s)
+chb18 10s L=3 fold 3: F1 all=0.881 boundary=0.333 (shuffled 0.571) (6s)
+chb18 10s L=0 fold 4: F1 all=0.556 boundary=0.667 (shuffled 0.667) (4s)
+chb18 10s L=1 fold 4: F1 all=0.672 boundary=0.667 (shuffled 0.667) (5s)
+chb18 10s L=2 fold 4: F1 all=0.780 boundary=0.667 (shuffled 0.667) (5s)
+chb18 10s L=3 fold 4: F1 all=0.844 boundary=0.667 (shuffled 0.667) (7s)
+chb06  3s L=0 fold 0: F1 all=0.679 boundary=0.714 (shuffled 0.714) (2s)
+chb06  3s L=1 fold 0: F1 all=0.800 boundary=0.769 (shuffled 0.857) (3s)
+chb06  3s L=2 fold 0: F1 all=0.667 boundary=0.714 (shuffled 0.714) (2s)
+chb06  3s L=3 fold 0: F1 all=0.764 boundary=0.714 (shuffled 0.714) (3s)
+chb06  3s L=0 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (1s)
+chb06  3s L=1 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (1s)
+chb06  3s L=2 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (1s)
+chb06  3s L=3 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (1s)
+chb06  3s L=0 fold 2: F1 all=0.860 boundary=0.667 (shuffled 0.667) (2s)
+chb06  3s L=1 fold 2: F1 all=0.750 boundary=0.526 (shuffled 0.526) (1s)
+chb06  3s L=2 fold 2: F1 all=0.716 boundary=0.522 (shuffled 0.545) (1s)
+chb06  3s L=3 fold 2: F1 all=0.860 boundary=0.720 (shuffled 0.720) (2s)
+chb06  3s L=0 fold 3: F1 all=0.446 boundary=0.545 (shuffled 0.545) (5s)
+chb06  3s L=1 fold 3: F1 all=0.383 boundary=0.545 (shuffled 0.400) (3s)
+chb06  3s L=2 fold 3: F1 all=0.538 boundary=0.545 (shuffled 0.667) (2s)
+chb06  3s L=3 fold 3: F1 all=0.382 boundary=0.667 (shuffled 0.667) (2s)
+chb06  3s L=0 fold 4: F1 all=0.706 boundary=0.750 (shuffled 0.750) (2s)
+chb06  3s L=1 fold 4: F1 all=0.828 boundary=0.750 (shuffled 0.857) (2s)
+chb06  3s L=2 fold 4: F1 all=0.828 boundary=0.750 (shuffled 0.750) (2s)
+chb06  3s L=3 fold 4: F1 all=0.774 boundary=0.750 (shuffled 0.750) (2s)
+chb06  5s L=0 fold 0: F1 all=0.724 boundary=0.714 (shuffled 0.714) (3s)
+chb06  5s L=1 fold 0: F1 all=0.857 boundary=0.857 (shuffled 0.769) (3s)
+chb06  5s L=2 fold 0: F1 all=0.807 boundary=0.800 (shuffled 0.667) (3s)
+chb06  5s L=3 fold 0: F1 all=0.846 boundary=0.769 (shuffled 0.769) (3s)
+chb06  5s L=0 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (1s)
+chb06  5s L=1 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (1s)
+chb06  5s L=2 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (1s)
+chb06  5s L=3 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (2s)
+chb06  5s L=0 fold 2: F1 all=0.779 boundary=0.636 (shuffled 0.636) (2s)
+chb06  5s L=1 fold 2: F1 all=0.775 boundary=0.759 (shuffled 0.714) (3s)
+chb06  5s L=2 fold 2: F1 all=0.835 boundary=0.667 (shuffled 0.545) (2s)
+chb06  5s L=3 fold 2: F1 all=0.884 boundary=0.783 (shuffled 0.783) (2s)
+chb06  5s L=0 fold 3: F1 all=0.425 boundary=0.545 (shuffled 0.545) (3s)
+chb06  5s L=1 fold 3: F1 all=0.320 boundary=0.545 (shuffled 0.222) (4s)
+chb06  5s L=2 fold 3: F1 all=0.504 boundary=0.545 (shuffled 0.222) (3s)
+chb06  5s L=3 fold 3: F1 all=0.328 boundary=0.500 (shuffled 0.400) (3s)
+chb06  5s L=0 fold 4: F1 all=0.800 boundary=0.750 (shuffled 0.750) (3s)
+chb06  5s L=1 fold 4: F1 all=0.880 boundary=0.667 (shuffled 0.667) (3s)
+chb06  5s L=2 fold 4: F1 all=0.960 boundary=0.857 (shuffled 0.857) (3s)
+chb06  5s L=3 fold 4: F1 all=0.923 boundary=0.857 (shuffled 0.857) (3s)
+chb06  8s L=0 fold 0: F1 all=0.719 boundary=0.800 (shuffled 0.800) (3s)
+chb06  8s L=1 fold 0: F1 all=0.889 boundary=0.800 (shuffled 0.462) (6s)
+chb06  8s L=2 fold 0: F1 all=0.824 boundary=0.800 (shuffled 0.462) (5s)
+chb06  8s L=3 fold 0: F1 all=0.877 boundary=0.750 (shuffled 0.500) (5s)
+chb06  8s L=0 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (2s)
+chb06  8s L=1 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (2s)
+chb06  8s L=2 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (2s)
+chb06  8s L=3 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (2s)
+chb06  8s L=0 fold 2: F1 all=0.817 boundary=0.727 (shuffled 0.727) (4s)
+chb06  8s L=1 fold 2: F1 all=0.769 boundary=0.600 (shuffled 0.444) (3s)
+chb06  8s L=2 fold 2: F1 all=0.864 boundary=0.600 (shuffled 0.444) (3s)
+chb06  8s L=3 fold 2: F1 all=0.860 boundary=0.640 (shuffled 0.667) (3s)
+chb06  8s L=0 fold 3: F1 all=0.327 boundary=0.400 (shuffled 0.400) (6s)
+chb06  8s L=1 fold 3: F1 all=0.303 boundary=0.400 (shuffled 0.545) (4s)
+chb06  8s L=2 fold 3: F1 all=0.323 boundary=0.222 (shuffled 0.500) (3s)
+chb06  8s L=3 fold 3: F1 all=0.272 boundary=0.400 (shuffled 0.222) (5s)
+chb06  8s L=0 fold 4: F1 all=0.960 boundary=0.857 (shuffled 0.857) (5s)
+chb06  8s L=1 fold 4: F1 all=0.733 boundary=0.571 (shuffled 0.571) (3s)
+chb06  8s L=2 fold 4: F1 all=0.800 boundary=0.750 (shuffled 0.667) (3s)
+chb06  8s L=3 fold 4: F1 all=0.750 boundary=0.667 (shuffled 0.667) (4s)
+chb06 10s L=0 fold 0: F1 all=0.687 boundary=0.800 (shuffled 0.800) (4s)
+chb06 10s L=1 fold 0: F1 all=0.737 boundary=0.857 (shuffled 0.800) (4s)
+chb06 10s L=2 fold 0: F1 all=0.689 boundary=0.750 (shuffled 0.750) (4s)
+chb06 10s L=3 fold 0: F1 all=0.759 boundary=0.857 (shuffled 0.800) (6s)
+chb06 10s L=0 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (2s)
+chb06 10s L=1 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (2s)
+chb06 10s L=2 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (2s)
+chb06 10s L=3 fold 1: F1 all=0.000 boundary=0.000 (shuffled 0.000) (3s)
+chb06 10s L=0 fold 2: F1 all=0.841 boundary=0.636 (shuffled 0.636) (4s)
+chb06 10s L=1 fold 2: F1 all=0.825 boundary=0.600 (shuffled 0.600) (3s)
+chb06 10s L=2 fold 2: F1 all=0.886 boundary=0.750 (shuffled 0.696) (3s)
+chb06 10s L=3 fold 2: F1 all=0.899 boundary=0.800 (shuffled 0.609) (3s)
+chb06 10s L=0 fold 3: F1 all=0.351 boundary=0.545 (shuffled 0.545) (4s)
+chb06 10s L=1 fold 3: F1 all=0.347 boundary=0.545 (shuffled 0.400) (6s)
+chb06 10s L=2 fold 3: F1 all=0.418 boundary=0.400 (shuffled 0.400) (4s)
+chb06 10s L=3 fold 3: F1 all=0.331 boundary=0.545 (shuffled 0.462) (4s)
+chb06 10s L=0 fold 4: F1 all=0.880 boundary=0.667 (shuffled 0.667) (4s)
+chb06 10s L=1 fold 4: F1 all=0.917 boundary=0.667 (shuffled 0.571) (3s)
+chb06 10s L=2 fold 4: F1 all=0.857 boundary=0.857 (shuffled 0.500) (3s)
+chb06 10s L=3 fold 4: F1 all=0.889 boundary=0.857 (shuffled 0.571) (4s)
+
+# Experiment B1: Transition windows results
+
+`AsymSETNetGroupedSegments`, 1 s segments, non-causal TCN (width 32), one prediction per segment. Transition dataset (`fold_windows`), 5 folds by recording, patients chb01, chb18, chb06. Boundary segments: within ±2 s of an onset or offset. See `experiments/experiment_b1_transition.md`.
+
+**Pooled F1** is computed from TP/FP/FN summed over every patient and fold. It is the most reliable number for boundary segments, which are few per patient. Per-fold counts: `b1_transition_folds.csv`.
+
+Boundary segments per patient (all test folds, one window length): chb01 56, chb18 48, chb06 80.
+
+## Boundary segments
+
+**Pooled F1, boundary segments. Best per row in bold.**
+
+| Window | 0 layers | 1 layers | 2 layers | 3 layers |
+|---|---|---|---|---|
+| 3 s | 0.606 | 0.596 | 0.614 | **0.651** |
+| 5 s | 0.590 | 0.614 | 0.624 | **0.630** |
+| 8 s | 0.614 | 0.573 | 0.571 | **0.623** |
+| 10 s | 0.577 | 0.603 | 0.622 | **0.650** |
+
+**Boundary F1, mean of per-patient F1 ± variance across patients**
+
+| Window | 0 layers | 1 layers | 2 layers | 3 layers |
+|---|---|---|---|---|
+| 3 s | 0.598 ± 0.007 | 0.598 ± 0.002 | 0.617 ± 0.007 | **0.647** ± 0.003 |
+| 5 s | 0.584 ± 0.004 | 0.596 ± 0.014 | **0.616** ± 0.007 | 0.609 ± 0.019 |
+| 8 s | 0.594 ± 0.018 | 0.567 ± 0.005 | 0.562 ± 0.011 | **0.625** ± 0.005 |
+| 10 s | 0.567 ± 0.005 | 0.587 ± 0.017 | 0.614 ± 0.008 | **0.624** ± 0.029 |
+
+## All segments
+
+**Pooled F1, all test segments. Best per row in bold.**
+
+| Window | 0 layers | 1 layers | 2 layers | 3 layers |
+|---|---|---|---|---|
+| 3 s | 0.735 | 0.768 | 0.794 | **0.795** |
+| 5 s | 0.762 | 0.775 | **0.836** | 0.809 |
+| 8 s | 0.739 | 0.790 | 0.806 | **0.811** |
+| 10 s | 0.736 | 0.807 | **0.827** | 0.810 |
+
+## Shuffle test
+
+Pooled F1 with the segments of every test window in their original order → in a random order (drop). Each segment is scored against its own label. 0 layers must not change (control).
+
+**Boundary segments**
+
+| Window | 0 layers | 1 layers | 2 layers | 3 layers |
+|---|---|---|---|---|
+| 3 s | 0.606 → 0.606 (+0.000) | 0.596 → 0.610 (-0.013) | 0.614 → 0.612 (+0.003) | 0.651 → 0.643 (+0.008) |
+| 5 s | 0.590 → 0.590 (+0.000) | 0.614 → 0.578 (+0.036) | 0.624 → 0.568 (+0.056) | 0.630 → 0.626 (+0.005) |
+| 8 s | 0.614 → 0.614 (+0.000) | 0.573 → 0.481 (+0.093) | 0.571 → 0.490 (+0.081) | 0.623 → 0.562 (+0.060) |
+| 10 s | 0.577 → 0.577 (+0.000) | 0.603 → 0.555 (+0.048) | 0.622 → 0.559 (+0.063) | 0.650 → 0.562 (+0.087) |
+
+**All segments**
+
+| Window | 0 layers | 1 layers | 2 layers | 3 layers |
+|---|---|---|---|---|
+| 3 s | 0.735 → 0.735 (+0.000) | 0.768 → 0.771 (-0.002) | 0.794 → 0.794 (-0.000) | 0.795 → 0.796 (-0.001) |
+| 5 s | 0.762 → 0.762 (+0.000) | 0.775 → 0.773 (+0.001) | 0.836 → 0.832 (+0.004) | 0.809 → 0.805 (+0.003) |
+| 8 s | 0.739 → 0.739 (+0.000) | 0.790 → 0.781 (+0.008) | 0.806 → 0.782 (+0.023) | 0.811 → 0.800 (+0.010) |
+| 10 s | 0.736 → 0.736 (+0.000) | 0.807 → 0.790 (+0.016) | 0.827 → 0.802 (+0.025) | 0.810 → 0.797 (+0.014) |
+
+## Per patient
+
+**chb01: boundary F1 (folds pooled)**
+
+| Window | 0 layers | 1 layers | 2 layers | 3 layers |
+|---|---|---|---|---|
+| 3 s | 0.689 | 0.633 | 0.700 | **0.710** |
+| 5 s | 0.656 | 0.678 | 0.698 | **0.730** |
+| 8 s | **0.719** | 0.645 | 0.679 | 0.700 |
+| 10 s | 0.633 | 0.724 | 0.702 | **0.764** |
+
+**chb18: boundary F1 (folds pooled)**
+
+| Window | 0 layers | 1 layers | 2 layers | 3 layers |
+|---|---|---|---|---|
+| 3 s | 0.524 | **0.619** | **0.619** | 0.605 |
+| 5 s | 0.524 | 0.462 | **0.533** | 0.462 |
+| 8 s | 0.450 | 0.524 | 0.474 | **0.615** |
+| 10 s | 0.488 | 0.462 | **0.524** | 0.432 |
+
+**chb06: boundary F1 (folds pooled)**
+
+| Window | 0 layers | 1 layers | 2 layers | 3 layers |
+|---|---|---|---|---|
+| 3 s | 0.581 | 0.542 | 0.531 | **0.627** |
+| 5 s | 0.571 | **0.647** | 0.615 | 0.635 |
+| 8 s | **0.613** | 0.533 | 0.533 | 0.559 |
+| 10 s | 0.581 | 0.576 | 0.615 | **0.677** |
+

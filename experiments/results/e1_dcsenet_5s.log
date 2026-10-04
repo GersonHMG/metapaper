@@ -1,0 +1,34 @@
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+chb02 fold 0: F1=0.436 auroc=0.797 best_epoch=37/53 (81 train win, 15s)
+chb02 fold 1: F1=0.000 auroc=0.500 best_epoch=4/20 (81 train win, 5s)
+chb02 fold 2: F1=0.000 auroc=0.800 best_epoch=99/100 (153 train win, 51s)
+chb03 fold 0: F1=0.353 auroc=0.581 best_epoch=58/74 (307 train win, 75s)
+chb03 fold 1: F1=0.000 auroc=0.500 best_epoch=2/18 (278 train win, 17s)
+chb03 fold 2: F1=0.000 auroc=0.806 best_epoch=2/18 (307 train win, 18s)
+chb03 fold 3: F1=0.154 auroc=0.946 best_epoch=57/73 (312 train win, 75s)
+chb03 fold 4: F1=0.467 auroc=0.932 best_epoch=66/82 (273 train win, 74s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+chb04 fold 0: F1=0.292 auroc=0.284 best_epoch=20/36 (312 train win, 37s)
+chb04 fold 1: F1=0.432 auroc=0.771 best_epoch=54/70 (249 train win, 56s)
+chb04 fold 2: F1=0.218 auroc=0.568 best_epoch=49/65 (148 train win, 31s)
+chb05 fold 0: F1=0.821 auroc=0.974 best_epoch=84/100 (422 train win, 134s)
+chb05 fold 1: F1=0.821 auroc=0.923 best_epoch=85/100 (427 train win, 136s)
+chb05 fold 2: F1=0.914 auroc=0.994 best_epoch=23/39 (441 train win, 55s)
+chb05 fold 3: F1=0.773 auroc=0.986 best_epoch=52/68 (417 train win, 90s)
+chb05 fold 4: F1=0.829 auroc=0.977 best_epoch=7/23 (422 train win, 31s)
+chb06 fold 0: F1=0.000 auroc=0.444 best_epoch=68/84 (120 train win, 32s)
+chb06 fold 1: F1=0.000 auroc=0.550 best_epoch=3/19 (124 train win, 8s)
+chb06 fold 2: F1=0.000 auroc=0.344 best_epoch=29/45 (81 train win, 12s)
+chb06 fold 3: F1=0.000 auroc=0.391 best_epoch=99/100 (96 train win, 31s)
+chb06 fold 4: F1=0.000 auroc=0.863 best_epoch=99/100 (115 train win, 37s)
+/home/gmarihuan/metapaper/datasets/recording_cv.py:87: UserWarning: Only 3 recordings; using leave-one-recording-out instead of 5-fold.
+  warnings.warn(f"Only {n_rec} recordings; using leave-one-recording-out "
+chb07 fold 0: F1=0.300 auroc=0.865 best_epoch=20/36 (225 train win, 26s)
+chb07 fold 1: F1=0.538 auroc=0.909 best_epoch=59/75 (216 train win, 52s)
+chb07 fold 2: F1=0.533 auroc=0.738 best_epoch=80/96 (172 train win, 53s)

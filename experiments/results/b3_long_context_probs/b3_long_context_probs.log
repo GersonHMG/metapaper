@@ -1,0 +1,228 @@
+chb01 fold 0 (9s) F1/FA: none=0.62/5  13sc avg=0.90/0  13snc avg=0.93/1  29sc avg=0.72/0  29snc avg=0.93/1  61sc avg=0.43/0  61snc avg=0.79/0  125sc avg=0.18/1  125snc avg=0.67/0  13sc=0.86/3  13snc=0.90/4  29sc=0.90/2  29snc=0.92/4  61sc=0.92/2  61snc=0.92/2  125sc=0.92/3  125snc=0.91/3
+chb01 fold 1 (8s) F1/FA: none=0.39/12  13sc avg=0.60/6  13snc avg=0.67/6  29sc avg=0.52/1  29snc avg=0.67/1  61sc avg=0.34/2  61snc avg=0.69/1  125sc avg=0.19/3  125snc avg=0.56/0  13sc=0.70/6  13snc=0.72/6  29sc=0.70/4  29snc=0.76/4  61sc=0.72/4  61snc=0.77/4  125sc=0.70/6  125snc=0.80/2
+chb01 fold 2 (15s) F1/FA: none=0.23/4  13sc avg=0.64/0  13snc avg=0.64/0  29sc avg=0.61/0  29snc avg=0.77/0  61sc avg=0.00/0  61snc avg=0.84/0  125sc avg=0.00/1  125snc avg=0.61/0  13sc=0.57/2  13snc=0.56/0  29sc=0.52/1  29snc=0.60/0  61sc=0.48/1  61snc=0.60/0  125sc=0.51/1  125snc=0.56/0
+chb01 fold 3 (15s) F1/FA: none=0.49/4  13sc avg=0.68/0  13snc avg=0.92/0  29sc avg=0.00/1  29snc avg=0.81/0  61sc avg=0.00/0  61snc avg=0.00/0  125sc avg=0.00/0  125snc avg=0.00/0  13sc=0.76/3  13snc=0.81/0  29sc=0.80/2  29snc=0.92/0  61sc=0.88/1  61snc=0.89/0  125sc=0.86/1  125snc=0.89/0
+chb01 fold 4 (9s) F1/FA: none=0.61/18  13sc avg=0.93/0  13snc avg=0.96/0  29sc avg=0.81/0  29snc avg=0.94/0  61sc avg=0.51/1  61snc avg=0.90/0  125sc avg=0.34/0  125snc avg=0.83/0  13sc=0.89/0  13snc=0.96/0  29sc=0.88/0  29snc=0.98/0  61sc=0.91/1  61snc=0.97/1  125sc=0.95/0  125snc=0.98/0
+chb02 fold 0 (3s) F1/FA: none=0.01/660  13sc avg=0.01/225  13snc avg=0.02/253  29sc avg=0.01/121  29snc avg=0.02/122  61sc avg=0.00/62  61snc avg=0.01/60  125sc avg=0.00/39  125snc avg=0.01/36  13sc=0.01/392  13snc=0.00/251  29sc=0.00/126  29snc=0.01/384  61sc=0.01/234  61snc=0.01/317  125sc=0.01/253  125snc=0.01/322
+chb02 fold 1 (3s) F1/FA: none=0.05/189  13sc avg=0.27/0  13snc avg=0.27/11  29sc avg=0.09/0  29snc avg=0.33/1  61sc avg=0.00/0  61snc avg=0.00/0  125sc avg=0.01/45  125snc avg=0.00/1  13sc=0.02/775  13snc=0.02/759  29sc=0.04/419  29snc=0.02/719  61sc=0.05/406  61snc=0.02/689  125sc=0.00/15  125snc=0.06/31
+chb02 fold 2 (4s) F1/FA: none=0.04/169  13sc avg=0.00/0  13snc avg=0.32/6  29sc avg=0.00/0  29snc avg=0.00/0  61sc avg=0.00/5  61snc avg=0.00/5  125sc avg=0.00/38  125snc avg=0.00/0  13sc=0.27/17  13snc=0.13/38  29sc=0.28/18  29snc=0.11/25  61sc=0.48/10  61snc=0.11/42  125sc=0.40/8  125snc=0.08/11
+chb03 fold 0 (7s) F1/FA: none=0.48/38  13sc avg=0.82/1  13snc avg=0.87/1  29sc avg=0.69/0  29snc avg=0.83/0  61sc avg=0.40/0  61snc avg=0.82/0  125sc avg=0.18/3  125snc avg=0.61/0  13sc=0.78/3  13snc=0.79/9  29sc=0.78/6  29snc=0.85/4  61sc=0.77/6  61snc=0.87/1  125sc=0.79/8  125snc=0.90/4
+chb03 fold 1 (6s) F1/FA: none=0.62/7  13sc avg=0.76/2  13snc avg=0.86/1  29sc avg=0.62/0  29snc avg=0.85/0  61sc avg=0.37/1  61snc avg=0.80/0  125sc avg=0.08/2  125snc avg=0.37/0  13sc=0.85/1  13snc=0.85/0  29sc=0.88/1  29snc=0.89/0  61sc=0.87/0  61snc=0.92/0  125sc=0.83/0  125snc=0.88/0
+chb03 fold 2 (7s) F1/FA: none=0.30/65  13sc avg=0.43/1  13snc avg=0.40/6  29sc avg=0.32/0  29snc avg=0.60/0  61sc avg=0.13/11  61snc avg=0.19/11  125sc avg=0.03/4  125snc avg=0.34/1  13sc=0.39/13  13snc=0.46/12  29sc=0.38/12  29snc=0.43/7  61sc=0.47/8  61snc=0.50/2  125sc=0.49/5  125snc=0.46/7
+chb03 fold 3 (10s) F1/FA: none=0.66/17  13sc avg=0.48/4  13snc avg=0.55/4  29sc avg=0.55/0  29snc avg=0.83/0  61sc avg=0.12/2  61snc avg=0.26/2  125sc avg=0.04/2  125snc avg=0.27/1  13sc=0.73/7  13snc=0.65/7  29sc=0.81/4  29snc=0.65/5  61sc=0.74/7  61snc=0.83/2  125sc=0.81/6  125snc=0.79/4
+chb03 fold 4 (8s) F1/FA: none=0.47/1  13sc avg=0.70/0  13snc avg=0.77/0  29sc avg=0.54/0  29snc avg=0.79/0  61sc avg=0.38/0  61snc avg=0.66/0  125sc avg=0.28/0  125snc avg=0.63/0  13sc=0.76/1  13snc=0.82/0  29sc=0.66/0  29snc=0.79/3  61sc=0.77/0  61snc=0.86/0  125sc=0.90/2  125snc=0.82/0
+chb04 fold 0 (9s) F1/FA: none=0.15/252  13sc avg=0.60/6  13snc avg=0.69/5  29sc avg=0.18/12  29snc avg=0.25/11  61sc avg=0.20/3  61snc avg=0.69/2  125sc avg=0.00/9  125snc avg=0.10/7  13sc=0.57/16  13snc=0.47/43  29sc=0.38/21  29snc=0.27/49  61sc=0.48/17  61snc=0.34/45  125sc=0.34/17  125snc=0.29/36
+chb04 fold 1 (8s) F1/FA: none=0.06/874  13sc avg=0.50/17  13snc avg=0.50/17  29sc avg=0.61/7  29snc avg=0.61/7  61sc avg=0.46/3  61snc avg=0.58/3  125sc avg=0.22/2  125snc avg=0.51/2  13sc=0.40/19  13snc=0.33/49  29sc=0.44/46  29snc=0.40/51  61sc=0.56/16  61snc=0.39/37  125sc=0.53/15  125snc=0.42/22
+chb04 fold 2 (8s) F1/FA: none=0.00/108  13sc avg=0.00/0  13snc avg=0.00/0  29sc avg=0.00/0  29snc avg=0.00/0  61sc avg=0.00/0  61snc avg=0.00/0  125sc avg=0.00/0  125snc avg=0.00/0  13sc=0.00/1  13snc=0.00/2  29sc=0.00/0  29snc=0.00/0  61sc=0.00/0  61snc=0.00/0  125sc=0.00/0  125snc=0.00/0
+chb05 fold 0 (13s) F1/FA: none=0.41/17  13sc avg=0.83/0  13snc avg=0.81/1  29sc avg=0.68/0  29snc avg=0.92/1  61sc avg=0.53/0  61snc avg=0.92/0  125sc avg=0.39/0  125snc avg=0.89/0  13sc=0.86/5  13snc=0.91/1  29sc=0.92/0  29snc=0.96/1  61sc=0.84/3  61snc=0.96/1  125sc=0.87/2  125snc=0.96/1
+chb05 fold 1 (10s) F1/FA: none=0.35/20  13sc avg=0.63/11  13snc avg=0.67/10  29sc avg=0.72/3  29snc avg=0.78/3  61sc avg=0.61/2  61snc avg=0.87/0  125sc avg=0.32/2  125snc avg=0.82/0  13sc=0.77/14  13snc=0.89/2  29sc=0.62/18  29snc=0.77/3  61sc=0.79/4  61snc=0.93/0  125sc=0.81/1  125snc=0.95/0
+chb05 fold 2 (12s) F1/FA: none=0.77/6  13sc avg=0.83/0  13snc avg=0.95/0  29sc avg=0.78/0  29snc avg=0.95/0  61sc avg=0.57/0  61snc avg=0.96/0  125sc avg=0.31/0  125snc avg=0.97/0  13sc=0.93/0  13snc=0.92/0  29sc=0.93/0  29snc=0.96/0  61sc=0.92/0  61snc=0.97/0  125sc=0.92/0  125snc=0.96/0
+chb05 fold 3 (15s) F1/FA: none=0.62/14  13sc avg=0.84/0  13snc avg=0.93/0  29sc avg=0.84/0  29snc avg=0.96/0  61sc avg=0.72/0  61snc avg=0.92/0  125sc avg=0.50/1  125snc avg=0.90/0  13sc=0.84/1  13snc=0.93/0  29sc=0.83/0  29snc=0.98/0  61sc=0.85/0  61snc=0.98/0  125sc=0.85/0  125snc=0.98/0
+chb05 fold 4 (9s) F1/FA: none=0.41/74  13sc avg=0.32/38  13snc avg=0.54/13  29sc avg=0.85/1  29snc avg=0.64/6  61sc avg=0.73/0  61snc avg=0.91/0  125sc avg=0.27/4  125snc avg=0.71/0  13sc=0.82/10  13snc=0.83/9  29sc=0.81/15  29snc=0.64/13  61sc=0.55/38  61snc=0.63/9  125sc=0.52/43  125snc=0.79/6
+chb06 fold 0 (11s) F1/FA: none=0.08/218  13sc avg=0.22/6  13snc avg=0.54/6  29sc avg=0.04/32  29snc avg=0.39/2  61sc avg=0.00/191  61snc avg=0.06/31  125sc avg=0.00/240  125snc avg=0.01/66  13sc=0.34/14  13snc=0.45/10  29sc=0.31/19  29snc=0.46/12  61sc=0.30/19  61snc=0.52/11  125sc=0.31/15  125snc=0.57/3
+chb06 fold 1 (8s) F1/FA: none=0.02/365  13sc avg=0.08/15  13snc avg=0.11/14  29sc avg=0.03/68  29snc avg=0.03/68  61sc avg=0.02/59  61snc avg=0.01/114  125sc avg=0.01/69  125snc avg=0.01/67  13sc=0.05/99  13snc=0.08/80  29sc=0.05/143  29snc=0.09/76  61sc=0.06/97  61snc=0.09/62  125sc=0.04/112  125snc=0.07/130
+chb06 fold 2 (8s) F1/FA: none=0.20/49  13sc avg=0.23/2  13snc avg=0.51/2  29sc avg=0.00/38  29snc avg=0.11/9  61sc avg=0.00/47  61snc avg=0.00/12  125sc avg=0.00/68  125snc avg=0.01/8  13sc=0.30/1  13snc=0.69/6  29sc=0.49/6  29snc=0.76/2  61sc=0.37/4  61snc=0.84/6  125sc=0.53/6  125snc=0.80/6
+chb06 fold 3 (13s) F1/FA: none=0.07/31  13sc avg=0.27/4  13snc avg=0.36/4  29sc avg=0.02/43  29snc avg=0.09/28  61sc avg=0.00/11  61snc avg=0.01/34  125sc avg=0.00/9  125snc avg=0.00/19  13sc=0.32/9  13snc=0.56/4  29sc=0.12/6  29snc=0.49/5  61sc=0.11/8  61snc=0.42/6  125sc=0.10/0  125snc=0.48/5
+chb06 fold 4 (10s) F1/FA: none=0.17/7  13sc avg=0.24/3  13snc avg=0.52/1  29sc avg=0.05/4  29snc avg=0.38/1  61sc avg=0.00/3  61snc avg=0.19/1  125sc avg=0.00/4  125snc avg=0.17/1  13sc=0.36/5  13snc=0.59/2  29sc=0.34/6  29snc=0.63/1  61sc=0.41/2  61snc=0.56/2  125sc=0.51/4  125snc=0.59/1
+chb07 fold 0 (7s) F1/FA: none=0.28/87  13sc avg=0.89/2  13snc avg=0.86/3  29sc avg=0.80/0  29snc avg=0.90/1  61sc avg=0.49/0  61snc avg=0.81/0  125sc avg=0.00/0  125snc avg=0.00/0  13sc=0.75/12  13snc=0.71/14  29sc=0.81/9  29snc=0.75/12  61sc=0.79/9  61snc=0.80/10  125sc=0.81/8  125snc=0.84/7
+chb07 fold 1 (5s) F1/FA: none=0.06/611  13sc avg=0.35/10  13snc avg=0.39/10  29sc avg=0.06/117  29snc avg=0.07/117  61sc avg=0.08/60  61snc avg=0.13/60  125sc avg=0.01/3  125snc avg=0.20/15  13sc=0.27/64  13snc=0.19/192  29sc=0.11/240  29snc=0.14/295  61sc=0.16/137  61snc=0.15/187  125sc=0.32/40  125snc=0.24/136
+chb07 fold 2 (5s) F1/FA: none=0.04/240  13sc avg=0.14/4  13snc avg=0.14/4  29sc avg=0.00/0  29snc avg=0.06/1  61sc avg=0.00/1  61snc avg=0.00/0  125sc avg=0.11/3  125snc avg=0.00/1  13sc=0.11/7  13snc=0.15/26  29sc=0.12/8  29snc=0.16/29  61sc=0.14/14  61snc=0.14/23  125sc=0.09/14  125snc=0.10/23
+chb08 fold 0 (15s) F1/FA: none=0.47/89  13sc avg=0.59/18  13snc avg=0.78/7  29sc avg=0.17/43  29snc avg=0.53/8  61sc avg=0.04/53  61snc avg=0.42/10  125sc avg=0.02/5  125snc avg=0.60/2  13sc=0.66/17  13snc=0.67/16  29sc=0.71/8  29snc=0.66/8  61sc=0.69/15  61snc=0.66/11  125sc=0.84/6  125snc=0.72/2
+chb08 fold 1 (19s) F1/FA: none=0.42/68  13sc avg=0.71/1  13snc avg=0.71/1  29sc avg=0.84/2  29snc avg=0.84/2  61sc avg=0.42/0  61snc avg=0.80/0  125sc avg=0.35/2  125snc avg=0.53/0  13sc=0.36/6  13snc=0.38/4  29sc=0.39/3  29snc=0.39/2  61sc=0.39/1  61snc=0.38/1  125sc=0.63/6  125snc=0.50/5
+chb08 fold 2 (15s) F1/FA: none=0.46/3  13sc avg=0.68/3  13snc avg=0.86/2  29sc avg=0.55/2  29snc avg=0.69/0  61sc avg=0.08/31  61snc avg=0.67/0  125sc avg=0.03/20  125snc avg=0.70/0  13sc=0.82/4  13snc=0.89/4  29sc=0.87/3  29snc=0.87/2  61sc=0.91/3  61snc=0.75/1  125sc=0.88/5  125snc=0.82/2
+chb08 fold 3 (17s) F1/FA: none=0.57/31  13sc avg=0.84/0  13snc avg=0.84/0  29sc avg=0.81/0  29snc avg=0.81/0  61sc avg=0.79/0  61snc avg=0.79/0  125sc avg=0.43/2  125snc avg=0.88/0  13sc=0.81/10  13snc=0.83/7  29sc=0.79/12  29snc=0.87/4  61sc=0.85/6  61snc=0.91/0  125sc=0.83/9  125snc=0.94/0
+chb08 fold 4 (13s) F1/FA: none=0.43/63  13sc avg=0.47/1  13snc avg=0.47/1  29sc avg=0.42/0  29snc avg=0.72/0  61sc avg=0.33/0  61snc avg=0.71/0  125sc avg=0.47/2  125snc avg=0.58/0  13sc=0.59/2  13snc=0.55/3  29sc=0.54/2  29snc=0.62/2  61sc=0.56/2  61snc=0.70/2  125sc=0.57/4  125snc=0.70/1
+chb09 fold 0 (6s) F1/FA: none=0.07/474  13sc avg=0.60/8  13snc avg=0.63/8  29sc avg=0.19/9  29snc avg=0.25/9  61sc avg=0.11/5  61snc avg=0.24/5  125sc avg=0.01/23  125snc avg=0.06/21  13sc=0.59/17  13snc=0.50/29  29sc=0.43/18  29snc=0.48/17  61sc=0.39/32  61snc=0.38/29  125sc=0.40/33  125snc=0.46/20
+chb09 fold 1 (5s) F1/FA: none=0.11/274  13sc avg=0.65/12  13snc avg=0.65/11  29sc avg=0.77/2  29snc avg=0.79/4  61sc avg=0.47/3  61snc avg=0.78/0  125sc avg=0.05/38  125snc avg=0.60/4  13sc=0.32/52  13snc=0.23/111  29sc=0.39/46  29snc=0.29/99  61sc=0.43/27  61snc=0.40/38  125sc=0.40/21  125snc=0.30/154
+chb09 fold 2 (8s) F1/FA: none=0.20/143  13sc avg=0.80/2  13snc avg=0.81/1  29sc avg=0.69/1  29snc avg=0.76/0  61sc avg=0.45/1  61snc avg=0.71/0  125sc avg=0.15/6  125snc avg=0.08/1  13sc=0.72/10  13snc=0.71/10  29sc=0.78/6  29snc=0.76/5  61sc=0.65/19  61snc=0.85/1  125sc=0.69/16  125snc=0.86/1
+chb10 fold 0 (7s) F1/FA: none=0.50/57  13sc avg=0.28/37  13snc avg=0.30/36  29sc avg=0.29/18  29snc avg=0.20/21  61sc avg=0.10/27  61snc avg=0.14/25  125sc avg=0.04/26  125snc avg=0.10/10  13sc=0.36/48  13snc=0.63/23  29sc=0.28/67  29snc=0.38/48  61sc=0.26/80  61snc=0.38/46  125sc=0.28/49  125snc=0.47/30
+chb10 fold 1 (15s) F1/FA: none=0.59/14  13sc avg=0.84/0  13snc avg=0.92/0  29sc avg=0.82/0  29snc avg=0.86/0  61sc avg=0.52/0  61snc avg=0.84/0  125sc avg=0.32/1  125snc avg=0.00/0  13sc=0.98/0  13snc=0.94/0  29sc=0.95/0  29snc=0.90/0  61sc=0.96/0  61snc=0.90/0  125sc=0.95/0  125snc=0.91/0
+chb10 fold 2 (8s) F1/FA: none=0.55/45  13sc avg=0.79/2  13snc avg=0.83/2  29sc avg=0.78/0  29snc avg=0.93/0  61sc avg=0.48/0  61snc avg=0.94/0  125sc avg=0.12/2  125snc avg=0.86/0  13sc=0.77/6  13snc=0.75/10  29sc=0.78/5  29snc=0.81/6  61sc=0.80/5  61snc=0.80/5  125sc=0.77/6  125snc=0.83/4
+chb10 fold 3 (12s) F1/FA: none=0.64/24  13sc avg=0.90/0  13snc avg=0.98/0  29sc avg=0.77/0  29snc avg=0.96/0  61sc avg=0.45/0  61snc avg=0.90/0  125sc avg=0.26/0  125snc avg=0.82/0  13sc=0.91/3  13snc=0.92/1  29sc=0.90/0  29snc=0.96/0  61sc=0.92/2  61snc=0.96/0  125sc=0.91/0  125snc=0.93/0
+chb10 fold 4 (9s) F1/FA: none=0.36/7  13sc avg=0.58/6  13snc avg=0.60/5  29sc avg=0.56/3  29snc avg=0.62/2  61sc avg=0.41/2  61snc avg=0.45/1  125sc avg=0.08/2  125snc avg=0.22/1  13sc=0.81/2  13snc=0.86/2  29sc=0.80/1  29snc=0.74/3  61sc=0.81/3  61snc=0.68/4  125sc=0.79/4  125snc=0.66/4
+chb11 fold 0 (11s) F1/FA: none=0.31/9  13sc avg=0.80/0  13snc avg=0.90/0  29sc avg=0.48/0  29snc avg=0.86/0  61sc avg=0.00/0  61snc avg=0.00/0  125sc avg=0.00/0  125snc avg=0.00/0  13sc=0.81/0  13snc=0.89/0  29sc=0.91/0  29snc=0.93/0  61sc=0.62/0  61snc=0.95/0  125sc=0.48/0  125snc=0.91/0
+chb11 fold 1 (13s) F1/FA: none=0.46/17  13sc avg=0.81/0  13snc avg=0.95/0  29sc avg=0.62/0  29snc avg=0.93/0  61sc avg=0.36/0  61snc avg=0.92/0  125sc avg=0.00/0  125snc avg=0.00/0  13sc=0.86/1  13snc=0.94/0  29sc=0.75/5  29snc=0.95/0  61sc=0.83/0  61snc=0.97/0  125sc=0.79/0  125snc=0.94/0
+chb11 fold 2 (4s) F1/FA: none=0.57/38  13sc avg=0.88/1  13snc avg=0.90/5  29sc avg=0.95/3  29snc avg=0.93/1  61sc avg=0.70/7  61snc avg=0.95/0  125sc avg=0.71/3  125snc avg=0.72/2  13sc=0.64/0  13snc=0.85/13  29sc=0.86/5  29snc=0.89/5  61sc=0.71/0  61snc=0.87/28  125sc=0.70/0  125snc=0.81/8
+chb12 fold 0 (20s) F1/FA: none=0.48/19  13sc avg=0.58/7  13snc avg=0.64/2  29sc avg=0.53/4  29snc avg=0.66/2  61sc avg=0.23/1  61snc avg=0.65/0  125sc avg=0.06/1  125snc avg=0.50/1  13sc=0.61/7  13snc=0.64/6  29sc=0.63/4  29snc=0.64/6  61sc=0.63/5  61snc=0.62/7  125sc=0.63/4  125snc=0.63/6
+chb12 fold 1 (19s) F1/FA: none=0.57/20  13sc avg=0.65/0  13snc avg=0.88/1  29sc avg=0.50/1  29snc avg=0.87/0  61sc avg=0.28/0  61snc avg=0.59/0  125sc avg=0.25/2  125snc avg=0.00/0  13sc=0.81/2  13snc=0.89/1  29sc=0.66/0  29snc=0.88/1  61sc=0.83/3  61snc=0.87/0  125sc=0.82/4  125snc=0.88/0
+chb12 fold 2 (35s) F1/FA: none=0.56/8  13sc avg=0.59/0  13snc avg=0.61/0  29sc avg=0.54/0  29snc avg=0.65/0  61sc avg=0.39/2  61snc avg=0.67/0  125sc avg=0.01/0  125snc avg=0.36/0  13sc=0.60/0  13snc=0.73/0  29sc=0.67/0  29snc=0.69/0  61sc=0.74/1  61snc=0.67/0  125sc=0.69/0  125snc=0.56/0
+chb12 fold 3 (40s) F1/FA: none=0.59/27  13sc avg=0.52/2  13snc avg=0.69/2  29sc avg=0.39/2  29snc avg=0.75/2  61sc avg=0.16/6  61snc avg=0.43/1  125sc avg=0.10/4  125snc avg=0.35/1  13sc=0.72/4  13snc=0.74/3  29sc=0.72/3  29snc=0.58/3  61sc=0.71/3  61snc=0.73/3  125sc=0.72/4  125snc=0.69/3
+chb12 fold 4 (25s) F1/FA: none=0.32/21  13sc avg=0.33/6  13snc avg=0.38/7  29sc avg=0.22/11  29snc avg=0.35/4  61sc avg=0.12/13  61snc avg=0.27/6  125sc avg=0.05/9  125snc avg=0.00/3  13sc=0.42/9  13snc=0.39/10  29sc=0.40/14  29snc=0.38/7  61sc=0.42/9  61snc=0.38/5  125sc=0.42/7  125snc=0.37/4
+chb13 fold 0 (6s) F1/FA: none=0.27/38  13sc avg=0.31/3  13snc avg=0.56/3  29sc avg=0.00/2  29snc avg=0.31/0  61sc avg=0.00/0  61snc avg=0.00/0  125sc avg=0.00/3  125snc avg=0.00/0  13sc=0.26/16  13snc=0.27/13  29sc=0.22/27  29snc=0.24/27  61sc=0.15/9  61snc=0.37/11  125sc=0.18/15  125snc=0.45/4
+chb13 fold 1 (12s) F1/FA: none=0.41/18  13sc avg=0.60/0  13snc avg=0.60/0  29sc avg=0.31/4  29snc avg=0.59/3  61sc avg=0.08/2  61snc avg=0.56/1  125sc avg=0.06/1  125snc avg=0.13/2  13sc=0.64/6  13snc=0.26/0  29sc=0.64/3  29snc=0.26/0  61sc=0.48/1  61snc=0.41/2  125sc=0.68/1  125snc=0.60/0
+chb13 fold 2 (7s) F1/FA: none=0.21/0  13sc avg=0.59/0  13snc avg=0.59/0  29sc avg=0.43/1  29snc avg=0.53/0  61sc avg=0.02/1  61snc avg=0.47/1  125sc avg=0.02/1  125snc avg=0.50/1  13sc=0.54/4  13snc=0.51/2  29sc=0.53/6  29snc=0.49/8  61sc=0.44/1  61snc=0.40/1  125sc=0.53/4  125snc=0.23/0
+chb13 fold 3 (19s) F1/FA: none=0.63/4  13sc avg=0.60/0  13snc avg=0.68/0  29sc avg=0.47/0  29snc avg=0.63/0  61sc avg=0.14/0  61snc avg=0.59/0  125sc avg=0.06/0  125snc avg=0.39/0  13sc=0.63/2  13snc=0.74/3  29sc=0.57/4  29snc=0.66/1  61sc=0.63/6  61snc=0.79/2  125sc=0.77/10  125snc=0.79/2
+chb13 fold 4 (7s) F1/FA: none=0.52/15  13sc avg=0.53/1  13snc avg=0.59/1  29sc avg=0.28/4  29snc avg=0.57/0  61sc avg=0.20/4  61snc avg=0.37/1  125sc avg=0.10/12  125snc avg=0.38/1  13sc=0.58/8  13snc=0.62/4  29sc=0.59/2  29snc=0.63/2  61sc=0.60/3  61snc=0.63/2  125sc=0.63/2  125snc=0.63/2
+chb14 fold 0 (4s) F1/FA: none=0.10/236  13sc avg=0.03/180  13snc avg=0.03/179  29sc avg=0.02/116  29snc avg=0.03/115  61sc avg=0.01/4  61snc avg=0.01/4  125sc avg=0.01/4  125snc avg=0.01/4  13sc=0.23/53  13snc=0.20/92  29sc=0.07/182  29snc=0.27/41  61sc=0.07/152  61snc=0.24/45  125sc=0.07/146  125snc=0.13/87
+chb14 fold 1 (9s) F1/FA: none=0.29/21  13sc avg=0.31/0  13snc avg=0.49/0  29sc avg=0.09/3  29snc avg=0.11/0  61sc avg=0.00/7  61snc avg=0.24/5  125sc avg=0.01/34  125snc avg=0.03/26  13sc=0.37/0  13snc=0.49/0  29sc=0.25/0  29snc=0.55/0  61sc=0.25/0  61snc=0.58/0  125sc=0.29/1  125snc=0.58/0
+chb14 fold 2 (9s) F1/FA: none=0.33/9  13sc avg=0.00/0  13snc avg=0.00/0  29sc avg=0.00/2  29snc avg=0.53/1  61sc avg=0.01/12  61snc avg=0.06/11  125sc avg=0.01/15  125snc avg=0.02/14  13sc=0.53/0  13snc=0.67/0  29sc=0.44/0  29snc=0.35/0  61sc=0.53/0  61snc=0.13/0  125sc=0.60/0  125snc=0.35/0
+chb14 fold 3 (12s) F1/FA: none=0.20/23  13sc avg=0.00/1  13snc avg=0.00/1  29sc avg=0.00/0  29snc avg=0.00/0  61sc avg=0.00/28  61snc avg=0.00/8  125sc avg=0.00/12  125snc avg=0.00/19  13sc=0.36/2  13snc=0.48/1  29sc=0.37/4  29snc=0.48/2  61sc=0.42/2  61snc=0.35/2  125sc=0.36/2  125snc=0.38/1
+chb14 fold 4 (9s) F1/FA: none=0.00/9  13sc avg=0.56/1  13snc avg=0.58/0  29sc avg=0.14/7  29snc avg=0.62/1  61sc avg=0.02/23  61snc avg=0.21/6  125sc avg=0.01/14  125snc avg=0.03/15  13sc=0.62/5  13snc=0.75/1  29sc=0.44/4  29snc=0.78/0  61sc=0.41/3  61snc=0.87/0  125sc=0.63/10  125snc=0.78/0
+chb15 fold 0 (34s) F1/FA: none=0.80/19  13sc avg=0.90/7  13snc avg=0.90/7  29sc avg=0.90/1  29snc avg=0.86/6  61sc avg=0.68/4  61snc avg=0.88/1  125sc avg=0.48/4  125snc avg=0.66/3  13sc=0.93/3  13snc=0.92/6  29sc=0.94/1  29snc=0.94/1  61sc=0.94/1  61snc=0.96/2  125sc=0.94/3  125snc=0.96/0
+chb15 fold 1 (16s) F1/FA: none=0.78/80  13sc avg=0.86/16  13snc avg=0.84/16  29sc avg=0.89/2  29snc avg=0.87/4  61sc avg=0.71/0  61snc avg=0.87/1  125sc avg=0.47/0  125snc avg=0.72/1  13sc=0.86/37  13snc=0.86/21  29sc=0.85/27  29snc=0.82/36  61sc=0.82/43  61snc=0.79/52  125sc=0.88/13  125snc=0.78/30
+chb15 fold 2 (30s) F1/FA: none=0.78/65  13sc avg=0.93/4  13snc avg=0.92/3  29sc avg=0.92/1  29snc avg=0.92/0  61sc avg=0.78/2  61snc avg=0.91/0  125sc avg=0.55/6  125snc avg=0.85/0  13sc=0.94/5  13snc=0.93/7  29sc=0.95/4  29snc=0.91/7  61sc=0.96/0  61snc=0.92/2  125sc=0.96/1  125snc=0.93/3
+chb15 fold 3 (36s) F1/FA: none=0.46/46  13sc avg=0.48/4  13snc avg=0.48/4  29sc avg=0.44/3  29snc avg=0.48/3  61sc avg=0.35/4  61snc avg=0.44/3  125sc avg=0.26/4  125snc avg=0.41/3  13sc=0.48/9  13snc=0.49/6  29sc=0.49/6  29snc=0.49/3  61sc=0.48/7  61snc=0.49/3  125sc=0.49/3  125snc=0.49/4
+chb15 fold 4 (25s) F1/FA: none=0.60/78  13sc avg=0.81/5  13snc avg=0.82/5  29sc avg=0.80/2  29snc avg=0.82/2  61sc avg=0.69/1  61snc avg=0.78/2  125sc avg=0.56/0  125snc avg=0.82/1  13sc=0.76/11  13snc=0.80/7  29sc=0.79/6  29snc=0.85/3  61sc=0.80/5  61snc=0.85/3  125sc=0.78/4  125snc=0.86/3
+chb16 fold 0 (6s) F1/FA: none=0.00/61  13sc avg=0.01/44  13snc avg=0.00/19  29sc avg=0.00/35  29snc avg=0.00/11  61sc avg=0.00/18  61snc avg=0.00/17  125sc avg=0.00/5  125snc avg=0.00/4  13sc=0.01/49  13snc=0.00/30  29sc=0.02/40  29snc=0.00/29  61sc=0.01/53  61snc=0.00/19  125sc=0.01/46  125snc=0.01/43
+chb16 fold 1 (6s) F1/FA: none=0.00/9  13sc avg=0.00/4  13snc avg=0.00/4  29sc avg=0.00/11  29snc avg=0.00/1  61sc avg=0.00/0  61snc avg=0.00/0  125sc avg=0.00/0  125snc avg=0.00/0  13sc=0.00/16  13snc=0.00/4  29sc=0.05/31  29snc=0.00/4  61sc=0.00/6  61snc=0.00/4  125sc=0.04/19  125snc=0.00/4
+chb16 fold 2 (7s) F1/FA: none=0.00/0  13sc avg=0.00/0  13snc avg=0.00/0  29sc avg=0.00/0  29snc avg=0.00/0  61sc avg=0.00/0  61snc avg=0.00/0  125sc avg=0.00/0  125snc avg=0.00/0  13sc=0.00/0  13snc=0.00/0  29sc=0.12/2  29snc=0.00/0  61sc=0.00/1  61snc=0.00/0  125sc=0.12/1  125snc=0.00/0
+chb16 fold 3 (6s) F1/FA: none=0.00/22  13sc avg=0.00/15  13snc avg=0.00/7  29sc avg=0.00/6  29snc avg=0.00/6  61sc avg=0.00/15  61snc avg=0.00/3  125sc avg=0.00/7  125snc avg=0.00/1  13sc=0.00/13  13snc=0.00/9  29sc=0.00/11  29snc=0.00/3  61sc=0.00/13  61snc=0.00/4  125sc=0.00/13  125snc=0.00/4
+chb16 fold 4 (3s) F1/FA: none=0.01/196  13sc avg=0.01/2  13snc avg=0.01/2  29sc avg=0.01/2  29snc avg=0.01/2  61sc avg=0.01/2  61snc avg=0.01/2  125sc avg=0.01/2  125snc avg=0.01/2  13sc=0.01/35  13snc=0.01/21  29sc=0.01/2  29snc=0.01/2  61sc=0.01/2  61snc=0.01/2  125sc=0.01/2  125snc=0.01/2
+chb17 fold 0 (3s) F1/FA: none=0.19/286  13sc avg=0.37/24  13snc avg=0.40/24  29sc avg=0.16/20  29snc avg=0.18/19  61sc avg=0.11/20  61snc avg=0.41/3  125sc avg=0.05/11  125snc avg=0.26/4  13sc=0.35/52  13snc=0.29/86  29sc=0.37/39  29snc=0.33/59  61sc=0.40/30  61snc=0.35/64  125sc=0.20/47  125snc=0.42/28
+chb17 fold 1 (3s) F1/FA: none=0.47/6  13sc avg=0.69/0  13snc avg=0.69/0  29sc avg=0.70/0  29snc avg=0.83/0  61sc avg=0.71/0  61snc avg=0.82/0  125sc avg=0.42/0  125snc avg=0.96/0  13sc=0.65/0  13snc=0.64/0  29sc=0.69/2  29snc=0.65/0  61sc=0.69/0  61snc=0.72/0  125sc=0.67/0  125snc=0.76/0
+chb17 fold 2 (3s) F1/FA: none=0.04/6  13sc avg=0.47/0  13snc avg=0.47/0  29sc avg=0.39/0  29snc avg=0.39/0  61sc avg=0.00/0  61snc avg=0.65/0  125sc avg=0.00/0  125snc avg=0.00/0  13sc=0.63/7  13snc=0.32/0  29sc=0.36/2  29snc=0.15/0  61sc=0.39/1  61snc=0.31/0  125sc=0.40/5  125snc=0.31/0
+chb18 fold 0 (8s) F1/FA: none=0.40/13  13sc avg=0.49/0  13snc avg=0.49/0  29sc avg=0.41/0  29snc avg=0.41/0  61sc avg=0.48/1  61snc avg=0.20/0  125sc avg=0.10/19  125snc avg=0.72/0  13sc=0.45/1  13snc=0.64/0  29sc=0.52/2  29snc=0.55/0  61sc=0.48/0  61snc=0.61/0  125sc=0.57/2  125snc=0.62/0
+chb18 fold 1 (11s) F1/FA: none=0.40/8  13sc avg=0.43/3  13snc avg=0.40/2  29sc avg=0.26/1  29snc avg=0.37/1  61sc avg=0.11/1  61snc avg=0.34/1  125sc avg=0.07/1  125snc avg=0.20/1  13sc=0.60/5  13snc=0.60/3  29sc=0.59/3  29snc=0.56/2  61sc=0.62/2  61snc=0.47/3  125sc=0.65/2  125snc=0.56/2
+chb18 fold 2 (11s) F1/FA: none=0.37/47  13sc avg=0.63/0  13snc avg=0.63/0  29sc avg=0.52/0  29snc avg=0.52/0  61sc avg=0.43/0  61snc avg=0.36/0  125sc avg=0.01/14  125snc avg=0.65/0  13sc=0.61/3  13snc=0.47/0  29sc=0.50/8  29snc=0.60/0  61sc=0.53/3  61snc=0.52/0  125sc=0.67/8  125snc=0.60/0
+chb18 fold 3 (8s) F1/FA: none=0.58/24  13sc avg=0.71/0  13snc avg=0.80/0  29sc avg=0.60/0  29snc avg=0.74/0  61sc avg=0.36/1  61snc avg=0.76/0  125sc avg=0.04/6  125snc avg=0.55/0  13sc=0.83/1  13snc=0.84/4  29sc=0.88/8  29snc=0.84/1  61sc=0.79/11  61snc=0.77/4  125sc=0.95/2  125snc=0.80/3
+chb18 fold 4 (11s) F1/FA: none=0.47/31  13sc avg=0.51/5  13snc avg=0.59/5  29sc avg=0.57/1  29snc avg=0.50/2  61sc avg=0.13/0  61snc avg=0.44/1  125sc avg=0.05/5  125snc avg=0.26/1  13sc=0.77/6  13snc=0.63/4  29sc=0.77/10  29snc=0.62/4  61sc=0.84/6  61snc=0.42/1  125sc=0.89/1  125snc=0.53/1
+chb19 fold 0 (4s) F1/FA: none=0.11/176  13sc avg=0.22/32  13snc avg=0.22/31  29sc avg=0.16/25  29snc avg=0.30/8  61sc avg=0.14/12  61snc avg=0.31/4  125sc avg=0.07/6  125snc avg=0.29/1  13sc=0.17/40  13snc=0.20/39  29sc=0.18/49  29snc=0.16/61  61sc=0.20/40  61snc=0.19/56  125sc=0.18/48  125snc=0.21/38
+chb19 fold 1 (3s) F1/FA: none=0.41/37  13sc avg=0.48/12  13snc avg=0.52/12  29sc avg=0.16/20  29snc avg=0.19/19  61sc avg=0.17/4  61snc avg=0.26/3  125sc avg=0.06/15  125snc avg=0.50/0  13sc=0.34/42  13snc=0.36/44  29sc=0.40/25  29snc=0.43/24  61sc=0.42/19  61snc=0.37/31  125sc=0.48/18  125snc=0.35/39
+chb19 fold 2 (5s) F1/FA: none=0.15/38  13sc avg=0.00/2  13snc avg=0.00/2  29sc avg=0.00/1  29snc avg=0.00/1  61sc avg=0.00/1  61snc avg=0.00/0  125sc avg=0.26/2  125snc avg=0.44/0  13sc=0.56/1  13snc=0.11/17  29sc=0.64/0  29snc=0.13/9  61sc=0.59/0  61snc=0.14/6  125sc=0.75/2  125snc=0.13/1
+chb20 fold 0 (6s) F1/FA: none=0.12/126  13sc avg=0.20/22  13snc avg=0.24/22  29sc avg=0.14/16  29snc avg=0.41/5  61sc avg=0.04/28  61snc avg=0.18/10  125sc avg=0.02/41  125snc avg=0.00/5  13sc=0.18/43  13snc=0.24/37  29sc=0.18/32  29snc=0.21/45  61sc=0.16/41  61snc=0.28/21  125sc=0.21/20  125snc=0.31/15
+chb20 fold 1 (9s) F1/FA: none=0.41/23  13sc avg=0.69/1  13snc avg=0.86/0  29sc avg=0.37/4  29snc avg=0.80/0  61sc avg=0.21/3  61snc avg=0.79/0  125sc avg=0.06/4  125snc avg=0.00/1  13sc=0.77/3  13snc=0.87/0  29sc=0.79/3  29snc=0.88/2  61sc=0.77/2  61snc=0.84/0  125sc=0.78/6  125snc=0.85/0
+chb20 fold 2 (8s) F1/FA: none=0.24/115  13sc avg=0.61/1  13snc avg=0.75/1  29sc avg=0.44/0  29snc avg=0.78/0  61sc avg=0.31/0  61snc avg=0.82/0  125sc avg=0.06/10  125snc avg=0.52/0  13sc=0.58/5  13snc=0.40/42  29sc=0.64/3  29snc=0.72/3  61sc=0.61/4  61snc=0.81/2  125sc=0.41/30  125snc=0.72/3
+chb20 fold 3 (7s) F1/FA: none=0.10/35  13sc avg=0.32/4  13snc avg=0.34/4  29sc avg=0.24/0  29snc avg=0.45/0  61sc avg=0.00/1  61snc avg=0.19/0  125sc avg=0.02/8  125snc avg=0.58/0  13sc=0.13/11  13snc=0.16/8  29sc=0.18/12  29snc=0.20/7  61sc=0.17/13  61snc=0.30/7  125sc=0.22/8  125snc=0.26/9
+chb20 fold 4 (6s) F1/FA: none=0.30/97  13sc avg=0.41/4  13snc avg=0.48/4  29sc avg=0.33/3  29snc avg=0.50/1  61sc avg=0.22/4  61snc avg=0.54/1  125sc avg=0.11/6  125snc avg=0.44/1  13sc=0.48/7  13snc=0.48/7  29sc=0.46/4  29snc=0.49/4  61sc=0.46/4  61snc=0.51/4  125sc=0.45/6  125snc=0.46/13
+chb21 fold 0 (6s) F1/FA: none=0.20/84  13sc avg=0.69/3  13snc avg=0.89/1  29sc avg=0.47/4  29snc avg=0.82/1  61sc avg=0.28/6  61snc avg=0.68/1  125sc avg=0.14/5  125snc avg=0.52/2  13sc=0.59/2  13snc=0.81/1  29sc=0.46/2  29snc=0.87/2  61sc=0.72/3  61snc=0.84/3  125sc=0.82/3  125snc=0.89/1
+chb21 fold 1 (5s) F1/FA: none=0.23/52  13sc avg=0.53/3  13snc avg=0.76/1  29sc avg=0.34/3  29snc avg=0.57/1  61sc avg=0.21/5  61snc avg=0.45/2  125sc avg=0.04/2  125snc avg=0.65/0  13sc=0.62/5  13snc=0.66/7  29sc=0.64/5  29snc=0.69/3  61sc=0.62/5  61snc=0.74/2  125sc=0.62/5  125snc=0.69/3
+chb21 fold 2 (6s) F1/FA: none=0.35/145  13sc avg=0.90/1  13snc avg=0.97/0  29sc avg=0.64/5  29snc avg=0.92/0  61sc avg=0.43/5  61snc avg=0.85/0  125sc avg=0.25/5  125snc avg=0.52/1  13sc=0.91/2  13snc=0.94/0  29sc=0.86/0  29snc=0.91/0  61sc=0.90/1  61snc=0.98/0  125sc=0.46/0  125snc=0.97/0
+chb21 fold 3 (6s) F1/FA: none=0.01/145  13sc avg=0.53/3  13snc avg=0.53/3  29sc avg=0.00/2  29snc avg=0.83/1  61sc avg=0.00/2  61snc avg=0.57/0  125sc avg=0.00/5  125snc avg=0.00/0  13sc=0.40/4  13snc=0.29/7  29sc=0.52/4  29snc=0.56/1  61sc=0.62/3  61snc=0.51/5  125sc=0.44/9  125snc=0.53/2
+chb22 fold 0 (3s) F1/FA: none=0.38/88  13sc avg=0.80/2  13snc avg=0.90/2  29sc avg=0.64/0  29snc avg=0.87/0  61sc avg=0.32/0  61snc avg=0.82/0  125sc avg=0.17/1  125snc avg=0.70/0  13sc=0.88/2  13snc=0.89/3  29sc=0.83/2  29snc=0.84/6  61sc=0.83/0  61snc=0.88/5  125sc=0.86/0  125snc=0.93/1
+chb22 fold 1 (4s) F1/FA: none=0.38/60  13sc avg=0.71/0  13snc avg=0.75/0  29sc avg=0.52/0  29snc avg=0.70/0  61sc avg=0.20/4  61snc avg=0.81/0  125sc avg=0.10/7  125snc avg=0.72/0  13sc=0.70/2  13snc=0.69/5  29sc=0.69/2  29snc=0.71/3  61sc=0.65/0  61snc=0.77/0  125sc=0.74/2  125snc=0.77/0
+chb22 fold 2 (4s) F1/FA: none=0.56/44  13sc avg=0.83/0  13snc avg=0.91/0  29sc avg=0.69/2  29snc avg=0.86/2  61sc avg=0.45/1  61snc avg=0.85/0  125sc avg=0.17/10  125snc avg=0.73/0  13sc=0.84/1  13snc=0.87/0  29sc=0.86/0  29snc=0.91/0  61sc=0.88/1  61snc=0.92/0  125sc=0.83/4  125snc=0.94/0
+chb23 fold 0 (7s) F1/FA: none=0.43/76  13sc avg=0.80/7  13snc avg=0.82/7  29sc avg=0.89/2  29snc avg=0.78/4  61sc avg=0.72/0  61snc avg=0.59/2  125sc avg=0.24/3  125snc avg=0.78/1  13sc=0.73/8  13snc=0.67/8  29sc=0.79/7  29snc=0.73/6  61sc=0.74/8  61snc=0.78/6  125sc=0.71/8  125snc=0.65/5
+chb23 fold 1 (8s) F1/FA: none=0.16/259  13sc avg=0.51/1  13snc avg=0.61/1  29sc avg=0.26/2  29snc avg=0.54/1  61sc avg=0.12/12  61snc avg=0.24/1  125sc avg=0.01/24  125snc avg=0.00/1  13sc=0.52/2  13snc=0.58/3  29sc=0.52/3  29snc=0.57/1  61sc=0.53/6  61snc=0.62/1  125sc=0.55/8  125snc=0.60/1
+chb23 fold 2 (6s) F1/FA: none=0.58/57  13sc avg=0.74/4  13snc avg=0.77/3  29sc avg=0.57/3  29snc avg=0.76/1  61sc avg=0.46/1  61snc avg=0.80/1  125sc avg=0.32/2  125snc avg=0.82/0  13sc=0.76/3  13snc=0.77/3  29sc=0.76/3  29snc=0.76/2  61sc=0.76/3  61snc=0.78/1  125sc=0.76/2  125snc=0.78/1
+chb24 fold 0 (8s) F1/FA: none=0.56/20  13sc avg=0.50/2  13snc avg=0.70/3  29sc avg=0.28/4  29snc avg=0.72/3  61sc avg=0.09/13  61snc avg=0.28/10  125sc avg=0.02/27  125snc avg=0.00/1  13sc=0.53/27  13snc=0.63/2  29sc=0.62/5  29snc=0.62/17  61sc=0.52/8  61snc=0.65/2  125sc=0.61/8  125snc=0.65/4
+chb24 fold 1 (15s) F1/FA: none=0.30/11  13sc avg=0.34/5  13snc avg=0.34/5  29sc avg=0.46/5  29snc avg=0.66/4  61sc avg=0.25/4  61snc avg=0.36/3  125sc avg=0.03/13  125snc avg=0.07/15  13sc=0.57/6  13snc=0.60/5  29sc=0.53/6  29snc=0.57/5  61sc=0.53/6  61snc=0.64/5  125sc=0.52/6  125snc=0.64/5
+chb24 fold 2 (16s) F1/FA: none=0.27/1  13sc avg=0.54/0  13snc avg=0.57/0  29sc avg=0.54/1  29snc avg=0.73/0  61sc avg=0.37/2  61snc avg=0.74/0  125sc avg=0.03/23  125snc avg=0.16/3  13sc=0.60/0  13snc=0.75/0  29sc=0.58/0  29snc=0.61/0  61sc=0.50/0  61snc=0.48/0  125sc=0.39/0  125snc=0.60/0
+chb24 fold 3 (12s) F1/FA: none=0.59/17  13sc avg=0.53/7  13snc avg=0.62/7  29sc avg=0.34/4  29snc avg=0.67/4  61sc avg=0.07/21  61snc avg=0.13/21  125sc avg=0.02/15  125snc avg=0.03/13  13sc=0.59/13  13snc=0.68/7  29sc=0.62/10  29snc=0.62/7  61sc=0.64/10  61snc=0.64/8  125sc=0.59/14  125snc=0.63/8
+chb24 fold 4 (8s) F1/FA: none=0.62/20  13sc avg=0.77/0  13snc avg=0.85/0  29sc avg=0.50/1  29snc avg=0.87/1  61sc avg=0.09/0  61snc avg=0.50/0  125sc avg=0.02/14  125snc avg=0.13/10  13sc=0.47/43  13snc=0.66/12  29sc=0.60/27  29snc=0.46/43  61sc=0.74/12  61snc=0.75/3  125sc=0.73/5  125snc=0.72/7
+
+# Experiment B3: Long temporal context, continuous EEG
+
+Frozen grouped spatial encoder (per-second classifier, its own output = **none**, no context). **avg** rows: non-learned moving average of the `none` probabilities over the same window (control). TCN rows: `TemporalHead` TCN over the per-second embeddings with receptive field 13/29/61/125 s, causal (past only) and non-causal (both sides). Evaluated on whole test recordings, seizure-free ones included: 24 patients, 952 test hours. Threshold per model and fold = best per-second F1 on validation seconds. See `experiments/experiment_b3_long_context.md`.
+
+Events: positive seconds, gaps < 10 s merged. A seizure is detected if an event overlaps it; latency = first detected second − onset; an event overlapping no seizure is a false alarm. Boundary seconds: within ±2 s of an onset or offset. Per-fold rows: `b3_long_context_probs_folds.csv`.
+
+## Pooled over patients and folds
+
+| Model | F1 (all s) | F1 (boundary s) | Seizures detected | False alarms / h | Median latency (s) |
+|---|---|---|---|---|---|
+| none | 0.294 | 0.320 | 95.0 % | 9.15 | 3 |
+| 13s causal avg | 0.248 | 0.444 | 91.2 % | 0.94 | 10 |
+| 13s non-causal avg | 0.338 | 0.397 | 91.7 % | 0.90 | 4 |
+| 29s causal avg | 0.201 | 0.441 | 84.5 % | 0.92 | 15 |
+| 29s non-causal avg | 0.315 | 0.481 | 90.6 % | 0.70 | 4 |
+| 61s causal avg | 0.089 | 0.429 | 72.9 % | 0.94 | 23 |
+| 61s non-causal avg | 0.169 | 0.482 | 78.5 % | 0.54 | 0 |
+| 125s causal avg | 0.039 | 0.463 | 73.5 % | 1.18 | 21 |
+| 125s non-causal avg | 0.133 | 0.484 | 60.2 % | 0.45 | 0 |
+| 13s causal | 0.379 | 0.414 | 95.0 % | 2.44 | 5 |
+| 13s non-causal | 0.459 | 0.435 | 95.0 % | 2.48 | 2 |
+| 29s causal | 0.382 | 0.435 | 95.6 % | 2.07 | 5 |
+| 29s non-causal | 0.364 | 0.462 | 93.9 % | 2.53 | 2 |
+| 61s causal | 0.300 | 0.438 | 95.6 % | 1.91 | 5 |
+| 61s non-causal | 0.348 | 0.489 | 93.9 % | 2.14 | 2 |
+| 125s causal | 0.208 | 0.451 | 96.7 % | 1.41 | 5 |
+| 125s non-causal | 0.403 | 0.490 | 94.5 % | 1.45 | 2 |
+
+## Paired comparison with no context
+
+Per-patient F1 (all seconds) and false alarms per hour: mean difference, patients improved, two-sided Wilcoxon signed-rank p-value (— with fewer than 5 patients). No correction for multiple comparisons.
+
+| Model | F1 − none | wins | p | FA/h − none | fewer FA | p |
+|---|---|---|---|---|---|---|
+| 13s causal avg | +0.177 | 20 / 24 | <0.001 | -8.14 | 24 / 24 | <0.001 |
+| 13s non-causal avg | +0.230 | 22 / 24 | <0.001 | -8.23 | 24 / 24 | <0.001 |
+| 29s causal avg | +0.068 | 13 / 24 | 0.107 | -8.28 | 24 / 24 | <0.001 |
+| 29s non-causal avg | +0.184 | 21 / 24 | <0.001 | -8.61 | 24 / 24 | <0.001 |
+| 61s causal avg | -0.090 | 7 / 24 | 0.031 | -8.29 | 24 / 24 | <0.001 |
+| 61s non-causal avg | +0.126 | 14 / 24 | 0.018 | -8.83 | 24 / 24 | <0.001 |
+| 125s causal avg | -0.202 | 2 / 24 | <0.001 | -8.06 | 23 / 24 | <0.001 |
+| 125s non-causal avg | +0.050 | 13 / 24 | 0.229 | -8.90 | 24 / 24 | <0.001 |
+| 13s causal | +0.193 | 23 / 24 | <0.001 | -6.38 | 22 / 24 | <0.001 |
+| 13s non-causal | +0.216 | 23 / 24 | <0.001 | -6.58 | 23 / 24 | <0.001 |
+| 29s causal | +0.178 | 22 / 24 | <0.001 | -6.96 | 24 / 24 | <0.001 |
+| 29s non-causal | +0.207 | 23 / 24 | <0.001 | -6.61 | 22 / 24 | <0.001 |
+| 61s causal | +0.182 | 21 / 24 | <0.001 | -7.16 | 24 / 24 | <0.001 |
+| 61s non-causal | +0.227 | 23 / 24 | <0.001 | -7.04 | 23 / 24 | <0.001 |
+| 125s causal | +0.186 | 20 / 24 | <0.001 | -7.59 | 24 / 24 | <0.001 |
+| 125s non-causal | +0.226 | 22 / 24 | <0.001 | -7.86 | 24 / 24 | <0.001 |
+
+## TCN vs. moving average with the same context
+
+Same comparison, each TCN against the non-learned moving average of the no-context probabilities over the same window (`avg` rows). Positive F1 / fewer FA = the learned temporal layer does more than averaging.
+
+| TCN | F1 − avg | wins | p | FA/h − avg | fewer FA | p |
+|---|---|---|---|---|---|---|
+| 13s causal | +0.016 | 15 / 24 | 0.303 | +1.76 | 2 / 24 | 0.001 |
+| 13s non-causal | -0.015 | 10 / 24 | 0.317 | +1.65 | 3 / 24 | <0.001 |
+| 29s causal | +0.110 | 23 / 24 | <0.001 | +1.31 | 3 / 24 | <0.001 |
+| 29s non-causal | +0.023 | 11 / 24 | 0.812 | +2.00 | 2 / 24 | <0.001 |
+| 61s causal | +0.273 | 24 / 24 | <0.001 | +1.13 | 7 / 24 | 0.019 |
+| 61s non-causal | +0.101 | 18 / 24 | 0.004 | +1.78 | 3 / 24 | <0.001 |
+| 125s causal | +0.387 | 24 / 24 | <0.001 | +0.48 | 7 / 24 | 0.089 |
+| 125s non-causal | +0.175 | 22 / 24 | <0.001 | +1.03 | 2 / 24 | <0.001 |
+
+## Per patient
+
+F1 over all test seconds, best per row in bold.
+
+| Patient | Hours | Seizures | F1 none | F1 13s causal avg | F1 13s non-causal avg | F1 29s causal avg | F1 29s non-causal avg | F1 61s causal avg | F1 61s non-causal avg | F1 125s causal avg | F1 125s non-causal avg | F1 13s causal | F1 13s non-causal | F1 29s causal | F1 29s non-causal | F1 61s causal | F1 61s non-causal | F1 125s causal | F1 125s non-causal |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| chb01 | 40.6 | 7 | 0.512 | 0.755 | 0.809 | 0.618 | 0.811 | 0.384 | 0.754 | 0.219 | 0.635 | 0.779 | 0.816 | 0.789 | 0.848 | 0.811 | 0.852 | 0.809 | **0.860** |
+| chb02 | 35.3 | 3 | 0.015 | 0.009 | 0.025 | 0.007 | 0.024 | 0.005 | 0.008 | 0.002 | 0.011 | 0.017 | 0.019 | **0.028** | 0.017 | 0.016 | 0.020 | 0.007 | 0.011 |
+| chb03 | 38.0 | 7 | 0.496 | 0.669 | 0.701 | 0.574 | 0.794 | 0.237 | 0.441 | 0.071 | 0.406 | 0.695 | 0.720 | 0.701 | 0.731 | 0.740 | **0.804** | 0.777 | 0.773 |
+| chb04 | 156.1 | 4 | 0.069 | 0.373 | 0.388 | 0.276 | 0.306 | 0.255 | **0.401** | 0.072 | 0.218 | 0.295 | 0.264 | 0.316 | 0.260 | 0.367 | 0.294 | 0.321 | 0.293 |
+| chb05 | 39.0 | 5 | 0.504 | 0.562 | 0.729 | 0.781 | 0.824 | 0.643 | 0.913 | 0.351 | 0.864 | 0.838 | 0.892 | 0.797 | 0.833 | 0.743 | 0.861 | 0.737 | **0.919** |
+| chb06 | 66.7 | 10 | 0.064 | 0.203 | 0.389 | 0.021 | 0.087 | 0.005 | 0.013 | 0.002 | 0.007 | 0.186 | 0.349 | 0.156 | 0.336 | 0.174 | **0.433** | 0.201 | 0.281 |
+| chb07 | 67.1 | 3 | 0.086 | 0.432 | **0.451** | 0.102 | 0.125 | 0.106 | 0.173 | 0.011 | 0.141 | 0.361 | 0.301 | 0.197 | 0.251 | 0.261 | 0.238 | 0.375 | 0.311 |
+| chb08 | 20.0 | 5 | 0.464 | 0.641 | 0.726 | 0.365 | 0.684 | 0.076 | 0.617 | 0.060 | 0.658 | 0.621 | 0.621 | 0.612 | 0.630 | 0.625 | 0.627 | **0.743** | 0.710 |
+| chb09 | 67.9 | 4 | 0.108 | 0.667 | **0.676** | 0.424 | 0.497 | 0.295 | 0.472 | 0.050 | 0.145 | 0.468 | 0.387 | 0.477 | 0.422 | 0.471 | 0.468 | 0.463 | 0.387 |
+| chb10 | 50.0 | 7 | 0.516 | 0.486 | 0.516 | 0.482 | 0.411 | 0.188 | 0.283 | 0.074 | 0.221 | 0.610 | **0.787** | 0.517 | 0.616 | 0.499 | 0.607 | 0.513 | 0.663 |
+| chb11 | 34.8 | 3 | 0.554 | 0.873 | 0.904 | 0.920 | **0.932** | 0.680 | 0.930 | 0.693 | 0.701 | 0.656 | 0.855 | 0.858 | 0.891 | 0.718 | 0.881 | 0.702 | 0.819 |
+| chb12 | 20.7 | 27 | 0.503 | 0.528 | 0.621 | 0.417 | 0.637 | 0.204 | 0.499 | 0.094 | 0.317 | 0.619 | **0.658** | 0.605 | 0.617 | 0.654 | 0.631 | 0.646 | 0.607 |
+| chb13 | 11.0 | 10 | 0.435 | 0.527 | **0.604** | 0.312 | 0.555 | 0.045 | 0.420 | 0.040 | 0.348 | 0.503 | 0.505 | 0.468 | 0.475 | 0.470 | 0.561 | 0.464 | 0.596 |
+| chb14 | 26.0 | 8 | 0.116 | 0.031 | 0.034 | 0.027 | 0.034 | 0.007 | 0.013 | 0.008 | 0.011 | 0.292 | 0.275 | 0.083 | **0.341** | 0.086 | 0.296 | 0.094 | 0.171 |
+| chb15 | 39.0 | 20 | 0.689 | 0.794 | 0.786 | 0.791 | 0.791 | 0.639 | 0.777 | 0.446 | 0.676 | 0.792 | 0.792 | 0.797 | 0.788 | 0.785 | 0.782 | **0.810** | 0.780 |
+| chb16 | 17.0 | 8 | **0.009** | 0.006 | 0.006 | 0.005 | 0.005 | 0.005 | 0.005 | 0.005 | 0.005 | 0.006 | 0.006 | 0.007 | 0.006 | 0.006 | 0.006 | 0.006 | 0.006 |
+| chb17 | 20.0 | 3 | 0.212 | 0.459 | 0.477 | 0.251 | 0.295 | 0.168 | **0.552** | 0.076 | 0.402 | 0.465 | 0.361 | 0.442 | 0.375 | 0.476 | 0.427 | 0.292 | 0.494 |
+| chb18 | 34.6 | 6 | 0.437 | 0.540 | 0.558 | 0.420 | 0.488 | 0.264 | 0.420 | 0.040 | 0.414 | 0.646 | 0.642 | 0.645 | 0.631 | 0.648 | 0.545 | **0.727** | 0.614 |
+| chb19 | 28.9 | 3 | 0.168 | 0.280 | 0.295 | 0.150 | 0.207 | 0.141 | 0.263 | 0.083 | **0.380** | 0.292 | 0.241 | 0.301 | 0.232 | 0.315 | 0.243 | 0.352 | 0.256 |
+| chb20 | 27.6 | 8 | 0.230 | 0.386 | 0.456 | 0.269 | **0.554** | 0.093 | 0.364 | 0.029 | 0.282 | 0.387 | 0.426 | 0.392 | 0.439 | 0.360 | 0.497 | 0.414 | 0.487 |
+| chb21 | 32.8 | 4 | 0.225 | 0.694 | **0.848** | 0.467 | 0.774 | 0.291 | 0.643 | 0.145 | 0.539 | 0.717 | 0.767 | 0.673 | 0.805 | 0.748 | 0.827 | 0.607 | 0.828 |
+| chb22 | 31.0 | 3 | 0.432 | 0.784 | 0.858 | 0.629 | 0.819 | 0.287 | 0.827 | 0.140 | 0.720 | 0.807 | 0.814 | 0.795 | 0.818 | 0.795 | 0.860 | 0.810 | **0.885** |
+| chb23 | 26.6 | 7 | 0.366 | 0.709 | **0.751** | 0.593 | 0.721 | 0.371 | 0.654 | 0.103 | 0.725 | 0.702 | 0.698 | 0.717 | 0.710 | 0.702 | 0.744 | 0.699 | 0.699 |
+| chb24 | 21.3 | 16 | 0.465 | 0.521 | 0.600 | 0.416 | **0.717** | 0.118 | 0.258 | 0.020 | 0.059 | 0.554 | 0.664 | 0.585 | 0.578 | 0.584 | 0.626 | 0.558 | 0.640 |
+
+False alarms per hour, lowest per row in bold.
+
+| Patient | FA/h none | FA/h 13s causal avg | FA/h 13s non-causal avg | FA/h 29s causal avg | FA/h 29s non-causal avg | FA/h 61s causal avg | FA/h 61s non-causal avg | FA/h 125s causal avg | FA/h 125s non-causal avg | FA/h 13s causal | FA/h 13s non-causal | FA/h 29s causal | FA/h 29s non-causal | FA/h 61s causal | FA/h 61s non-causal | FA/h 125s causal | FA/h 125s non-causal |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| chb01 | 1.06 | 0.15 | 0.17 | 0.05 | 0.05 | 0.07 | 0.02 | 0.12 | **0.00** | 0.35 | 0.25 | 0.22 | 0.20 | 0.22 | 0.17 | 0.27 | 0.12 |
+| chb02 | 28.87 | 6.38 | 7.66 | 3.43 | 3.49 | 1.90 | 1.84 | 3.46 | **1.05** | 33.57 | 29.72 | 15.96 | 31.99 | 18.43 | 29.72 | 7.83 | 10.32 |
+| chb03 | 3.37 | 0.21 | 0.32 | **0.00** | **0.00** | 0.37 | 0.34 | 0.29 | 0.05 | 0.66 | 0.74 | 0.61 | 0.50 | 0.55 | 0.13 | 0.55 | 0.39 |
+| chb04 | 7.91 | 0.15 | 0.14 | 0.12 | 0.12 | 0.04 | **0.03** | 0.07 | 0.06 | 0.23 | 0.60 | 0.43 | 0.64 | 0.21 | 0.53 | 0.21 | 0.37 |
+| chb05 | 3.36 | 1.26 | 0.62 | 0.10 | 0.26 | 0.05 | **0.00** | 0.18 | **0.00** | 0.77 | 0.31 | 0.85 | 0.44 | 1.15 | 0.26 | 1.18 | 0.18 |
+| chb06 | 10.04 | 0.45 | **0.40** | 2.77 | 1.62 | 4.66 | 2.88 | 5.84 | 2.41 | 1.92 | 1.53 | 2.70 | 1.44 | 1.95 | 1.30 | 2.05 | 2.17 |
+| chb07 | 13.99 | 0.24 | 0.25 | 1.74 | 1.77 | 0.91 | 0.89 | **0.09** | 0.24 | 1.24 | 3.46 | 3.83 | 5.01 | 2.39 | 3.28 | 0.92 | 2.48 |
+| chb08 | 12.70 | 1.15 | 0.55 | 2.35 | 0.50 | 4.20 | 0.50 | 1.55 | **0.10** | 1.95 | 1.70 | 1.40 | 0.90 | 1.35 | 0.75 | 1.50 | 0.50 |
+| chb09 | 13.13 | 0.32 | 0.29 | 0.18 | 0.19 | 0.13 | **0.07** | 0.99 | 0.38 | 1.16 | 2.21 | 1.03 | 1.78 | 1.15 | 1.00 | 1.03 | 2.58 |
+| chb10 | 2.94 | 0.90 | 0.86 | 0.42 | 0.46 | 0.58 | 0.52 | 0.62 | **0.22** | 1.18 | 0.72 | 1.46 | 1.14 | 1.80 | 1.10 | 1.18 | 0.76 |
+| chb11 | 1.84 | 0.03 | 0.14 | 0.09 | 0.03 | 0.20 | **0.00** | 0.09 | 0.06 | 0.03 | 0.37 | 0.29 | 0.14 | **0.00** | 0.80 | **0.00** | 0.23 |
+| chb12 | 4.59 | 0.73 | 0.58 | 0.87 | 0.39 | 1.06 | 0.34 | 0.77 | **0.24** | 1.06 | 0.97 | 1.02 | 0.82 | 1.02 | 0.73 | 0.92 | 0.63 |
+| chb13 | 6.82 | 0.36 | 0.36 | 1.00 | **0.27** | 0.64 | **0.27** | 1.55 | 0.36 | 3.27 | 2.00 | 3.82 | 3.45 | 1.82 | 1.64 | 2.91 | 0.73 |
+| chb14 | 11.46 | 7.00 | 6.92 | 4.92 | 4.50 | 2.85 | **1.31** | 3.04 | 3.00 | 2.31 | 3.62 | 7.31 | 1.65 | 6.04 | 1.81 | 6.12 | 3.38 |
+| chb15 | 7.38 | 0.92 | 0.90 | 0.23 | 0.38 | 0.28 | **0.18** | 0.36 | 0.21 | 1.67 | 1.20 | 1.13 | 1.28 | 1.44 | 1.59 | 0.62 | 1.03 |
+| chb16 | 16.94 | 3.82 | 1.88 | 3.18 | 1.18 | 2.06 | 1.29 | 0.82 | **0.41** | 6.65 | 3.76 | 5.06 | 2.24 | 4.41 | 1.71 | 4.76 | 3.12 |
+| chb17 | 14.90 | 1.20 | 1.20 | 1.00 | 0.95 | 1.00 | **0.15** | 0.55 | 0.20 | 2.95 | 4.30 | 2.15 | 2.95 | 1.55 | 3.20 | 2.60 | 1.40 |
+| chb18 | 3.55 | 0.23 | 0.20 | **0.06** | 0.09 | 0.09 | **0.06** | 1.30 | **0.06** | 0.46 | 0.32 | 0.90 | 0.20 | 0.64 | 0.23 | 0.43 | 0.17 |
+| chb19 | 8.68 | 1.59 | 1.56 | 1.59 | 0.97 | 0.59 | 0.24 | 0.80 | **0.03** | 2.87 | 3.46 | 2.56 | 3.25 | 2.04 | 3.21 | 2.35 | 2.70 |
+| chb20 | 14.35 | 1.16 | 1.12 | 0.83 | **0.22** | 1.30 | 0.40 | 2.50 | 0.25 | 2.50 | 3.41 | 1.96 | 2.21 | 2.32 | 1.23 | 2.54 | 1.45 |
+| chb21 | 12.98 | 0.30 | 0.15 | 0.43 | **0.09** | 0.55 | **0.09** | 0.52 | **0.09** | 0.40 | 0.46 | 0.34 | 0.18 | 0.37 | 0.30 | 0.52 | 0.18 |
+| chb22 | 6.19 | 0.06 | 0.06 | 0.06 | 0.06 | 0.16 | **0.00** | 0.58 | **0.00** | 0.16 | 0.26 | 0.13 | 0.29 | 0.03 | 0.16 | 0.19 | 0.03 |
+| chb23 | 14.76 | 0.45 | 0.41 | 0.26 | 0.23 | 0.49 | 0.15 | 1.09 | **0.08** | 0.49 | 0.53 | 0.49 | 0.34 | 0.64 | 0.30 | 0.68 | 0.26 |
+| chb24 | 3.24 | 0.66 | 0.70 | 0.70 | **0.56** | 1.88 | 1.60 | 4.32 | 1.97 | 4.18 | 1.22 | 2.25 | 3.38 | 1.69 | 0.85 | 1.55 | 1.13 |
+
